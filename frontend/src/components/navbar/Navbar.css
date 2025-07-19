@@ -1,0 +1,103 @@
+@import "../../styles/ColorSheet.css";
+
+.navbar {
+    width: 100vw;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    position: fixed;
+    z-index: 99;
+    transition: background ease 0.3s;
+
+    & .logo-box{
+        height: 107%;
+        & img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    & .link-page-box{
+        width: auto;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        gap: 10px;
+
+        & .link{
+            font-weight: 600;
+            border: 4px solid transparent;
+            height: 100%;
+            width: 110px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all ease 0.3s;
+            color: black;
+        }
+
+        & .link:hover{
+            border-bottom: 4px solid;
+        }
+
+        & .link.active{
+            border-bottom: 4px solid;
+        }
+    }
+    & .login-box{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-radius: 20px;
+        padding: 2px;
+        min-width: 120px;
+        cursor: pointer;
+        border: 1px solid #1cb2fd;
+        background: var(--background-head-title2);
+
+        & .text{
+            text-align: center;
+            display: flex;
+            width: 100%;
+            justify-content: center;
+            font-weight: 700;
+            color: var(--title-color-4);
+            font-size: 1rem;
+            margin: 0px 10px 0px 15px;
+        }
+        
+        & .img-box{
+            width: 30px;
+            height: 30px;
+            min-width: 30px;
+            min-height: 30px;
+            border-radius: 50%;
+            overflow: hidden;
+            cursor: pointer;
+            border: 1px solid #ec1ed1;
+
+            & img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+
+    & .login-box.login-home-page {
+        background: var(--background-head-title);
+        border-color: var(--yellow);
+        
+        & .text{
+            color: black;
+        }
+
+        & .img-box{
+            border-color: var(--yellow);
+        }
+    }
+}

@@ -1,0 +1,81 @@
+@import "../../styles/ColorSheet.css";
+
+.show-tour-slice-container {
+    width: 100vw;
+    height: 730px;
+    border-width: 12px 0;
+    border-style: solid;
+    border-image: var(--orange-yellow-for-border);
+    position: relative;
+    display: flex;
+    gap: 22px;
+    justify-content: center;
+
+    & .image-bg {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        background: #25272D;
+
+        & img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            filter: blur(5px) brightness(70%);
+        }
+    }
+
+    & .tour-container{
+        width: 80%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        gap: 80px;
+
+        & .image-box {
+            width: 48%;
+            height: 380px;
+            border-radius: 10px;
+            overflow: hidden;
+            cursor: pointer;
+    
+            & img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+    
+        & .text-box {
+            width: 52%;
+
+            & .tour-name{
+                color: var(--title-color-1);
+                padding-bottom: 10px;
+                font-weight: 600;
+                font-size: 24px;
+            }
+
+            & .title-text{
+                color: var(--title-color-4);
+                font-weight: 500;
+                padding-top: 12px;
+                padding-bottom: 4px;
+            }
+
+            & .tour-description{
+                color: var(--title-color-4);
+                font-size: 14px;
+            }
+
+            & .subtext{
+                color: var(--title-color-4);
+                white-space: pre-wrap;
+                font-size: 14px;
+                padding-left: 20px;
+            }
+        }
+    }
+    
+}

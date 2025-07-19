@@ -1,0 +1,135 @@
+@import "../../styles/ColorSheet.css";
+
+.package-item-container {
+    width: 75%;
+    height: 240px;
+    background-color: var(--card-color);
+    box-shadow: 0 0px 5px rgba(0, 0, 0, 0.2);
+    margin-top: 22px;
+    border-radius: 10px;
+    display: flex;
+    position: relative;
+    z-index: 1;
+    transition: all ease 0.3s;
+
+    & .title-bg {
+        position: absolute;
+        height: 40px;
+        width: 63%;
+        border-radius: 10px 0px 0px 0px;
+        background: var(--background-head-title);
+        z-index: -1;
+    }
+
+    & .detail-box {
+        height: 100%;
+        width: 63%;
+        padding: 0px 40px;
+        padding-bottom: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        & .title {
+            display: flex;
+            align-items: center;
+            height: 40px;
+            font-weight: 700;
+
+            & h3 {
+                display: -webkit-box;
+                -webkit-box-orient: vertical;
+                overflow: hidden;
+                -webkit-line-clamp: 1;
+                line-height: 1.5;
+                font-size: 1rem;
+                color: var(--title-color-3);
+            }
+        }
+
+        & .description {
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            -webkit-line-clamp: 3;
+            font-size: 14px;
+            color: var(--description-color);
+        }
+
+        & .duration-province-box {
+            display: flex;
+            font-size: 14px;
+            color: var(--title-color-3);
+
+            & .sub-box {
+                display: flex;
+                align-items: center;
+                padding: 5px 50px 15px 0px;
+
+                & .icon-box {
+                    width: 30px;
+                    height: 30px;
+                    margin-right: 12px;
+
+                    & img {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+
+        & .price-tourDetail-box {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            & .sub-box {
+                & .title {
+                    color: var(--title-color-2);
+                    font-weight: 600;
+                    height: auto;
+                }
+
+                & .price {
+                    font-weight: 700;
+                    font-size: 1.1rem;
+                    color: var(--price-color);
+                }
+
+                & .btn-detail {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border: 1px solid var(--btn-color-1);
+                    width: 120px;
+                    height: 35px;
+                    font-size: 0.85rem;
+                    color: var(--btn-color-1);
+                    cursor: pointer;
+                    transition: all ease 0.3s;
+                    border-radius: 5px;
+                    font-weight: 600;
+                }
+
+                & .btn-detail:hover{
+                    background-color: var(--btn-color-1);
+                    color: var(--text-btn-color-1);
+                }
+            }
+        }
+    }
+
+    & .image-box {
+        height: 100%;
+        width: 37%;
+        border-radius: 0px 10px 10px 0px;
+        overflow: hidden;
+
+
+        & img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}

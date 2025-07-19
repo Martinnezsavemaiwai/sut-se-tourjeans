@@ -1,0 +1,24 @@
+@import "../../styles/ColorSheet.css";
+
+.loading-container{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: white;
+
+    & h4{
+        margin-top: 15px;
+        animation: fadeInOut 1.5s infinite;
+    }
+}
+
+@keyframes fadeInOut {
+    0%, 100% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+}

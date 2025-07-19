@@ -1,0 +1,222 @@
+@import "../../../styles/ColorSheet.css";
+
+.login-for-customer-page {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+
+    & .bg-video {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        position: absolute;
+        z-index: -1;
+    }
+
+    & .form-container {
+        width: 100%;
+        height: 100%;
+
+        & .box {
+            background: linear-gradient(55deg, #272a3785 40%, transparent 80%);
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: end;
+            padding-left: 100px;
+            padding-bottom: 5%;
+            position: relative;
+            overflow: hidden;
+
+            & .login-form {
+                position: absolute;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                background: rgba(36, 36, 36, 0.342);
+                border-radius: 10px;
+                padding: 30px;
+                transform: translateX(-250%);
+                transition: all 0.5s ease;
+
+                & .title {
+                    font-weight: 800;
+                    font-size: 1.3rem;
+                    margin-bottom: 25px;
+                    color: var(--yellow);
+                }
+
+                & .btn {
+                    width: 90%;
+                    max-width: 300px;
+                    min-height: 45px;
+                    height: 45px;
+                    border-radius: 10px;
+                    border: 0px;
+                    font-weight: 700;
+                    font-size: 1rem;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    transition: all ease 0.5s;
+                    cursor: pointer;
+                }
+
+                & .submit-btn {
+                    background-color: var(--yellow);
+                    color: black;
+                    margin-top: 50px;
+                }
+
+                & .submit-btn:hover {
+                    background-color: #d4ca0c;
+                }
+
+                & .signup-btn,
+                .signin-btn {
+                    margin-top: 8px;
+                    color: var(--white);
+                    transition: all ease 0.5s;
+                }
+
+                & .signup-btn:hover,
+                .signin-btn:hover {
+                    background-color: var(--white);
+                    color: black;
+                }
+            }
+
+            & .signin-form {
+                width: 20%;
+                min-width: 310px;
+                max-width: 550px;
+
+                & .input-box {
+                    display: flex;
+                    flex-direction: column;
+                    width: 90%;
+                    background: #323644ce;
+                    border-radius: 10px;
+                    justify-content: center;
+                    padding: 8px 20px;
+                    margin-bottom: 8px;
+                    transition: all ease 0.5s;
+
+                    & span {
+                        font-size: 0.8rem;
+                        font-weight: 500;
+                        color: #93959c;
+                    }
+
+                    & input {
+                        padding: 5px 0px;
+                        background: transparent;
+                        border: 0px;
+                        caret-color: var(--white);
+                        color: white;
+                        font-size: 1.2rem;
+                        font-weight: 600;
+                    }
+
+                    & .err-text {
+                        color: rgb(255, 29, 29);
+                        font-size: 0.8rem;
+                    }
+                }
+            }
+
+            & .signup-form {
+                width: 40%;
+                min-width: 310px;
+
+                & .input-container {
+                    width: 90%;
+                    display: grid;
+                    grid-template-columns: repeat(2, 1fr);
+                    gap: 10px;
+                    grid-template-areas: 
+                        "username email"
+                        "firstname password"
+                        "lastname phone";
+
+                    & .username-input{grid-area: username;}
+                    & .firstname-input{grid-area: firstname;}
+                    & .lastname-input{grid-area: lastname;}
+                    & .email-input{grid-area: email;}
+                    & .password-input{grid-area: password;}
+                    & .phone-number-input{grid-area: phone;}
+
+                    & .input-box {
+                        display: flex;
+                        flex-direction: column;
+                        width: 100%;
+                        min-width: 100px;
+                        background: #323644ce;
+                        border-radius: 10px;
+                        justify-content: center;
+                        padding: 8px 20px;
+                        transition: all ease 0.5s;
+
+                        & span {
+                            font-size: 0.8rem;
+                            font-weight: 500;
+                            color: #93959c;
+                        }
+
+                        & input {
+                            padding: 5px 0px;
+                            background: transparent;
+                            border: 0px;
+                            caret-color: var(--white);
+                            color: white;
+                            font-size: 1.2rem;
+                            font-weight: 600;
+                        }
+
+                        & .err-text {
+                            color: rgb(255, 29, 29);
+                            font-size: 0.8rem;
+                        }
+                    }
+                }
+            }
+
+            & .active {
+                transform: translateX(0%);
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1100px){
+    .login-for-customer-page .form-container{
+        .box {
+            align-items: center;
+            justify-content: center;
+            padding: 0;
+
+            .signup-form{
+                width: 70%;
+                min-width: 500px;
+                max-height: 80%;
+                overflow: scroll;
+            }
+
+            .signup-form::-webkit-scrollbar {
+                display: none;
+            }
+        }
+        
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .login-for-customer-page .form-container{
+        .box .signup-form .input-container{
+            display: flex;
+            flex-direction: column;
+        }
+    }
+}

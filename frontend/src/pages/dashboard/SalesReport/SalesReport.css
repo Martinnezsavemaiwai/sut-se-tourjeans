@@ -1,0 +1,17 @@
+.SaleReport{
+    .salereport-page {
+        background-color: white; 
+        min-height: 100vh;      
+        padding: 20px;         
+    }
+    .sales-report-add-button {
+        background-color: #FFF100;
+        color: #000;
+        font-weight: bold;
+        border: none;
+        padding: 18px 20px;
+        border-radius: 8px;
+        font-size: 16px;
+        margin-top: 150px;
+    }
+}

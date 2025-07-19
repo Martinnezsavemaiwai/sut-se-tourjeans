@@ -1,0 +1,250 @@
+@import "../../styles/ColorSheet.css";
+
+.check-payment-page {
+    width: 100vw;
+    height: 100vh;
+    overflow: scroll;
+    overflow-y: auto;
+    overflow-x: hidden;
+    background: var(--background-color2);
+
+    & .popup-slip{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: fixed;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 9999;
+        padding: 20px;
+
+        & img{
+            height: 100%;
+            border-radius: 5px;
+        }
+    }
+
+    & .payment-box-card {
+        width: 100%;
+        height: calc(100vh - 60px);
+        padding: 22px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 10px 0px;
+        gap: 22px;
+
+        & .card {
+            background: var(--white);
+            border-radius: 10px;
+            box-shadow: 0 0px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        & .booking-step-card {
+            width: 75%;
+            height: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 8px 150px 0px 150px;
+
+            & .ant-steps-item-title {
+                font-family: "Noto Sans Thai", sans-serif;
+                font-size: 14px;
+            }
+
+            & .ant-steps-item-content {
+                margin-top: 5px;
+            }
+
+            & .ant-steps-icon {
+                font-family: "Noto Sans Thai", sans-serif;
+                font-weight: 600;
+            }
+
+            & :where(.css-dev-only-do-not-override-49qm).ant-steps .ant-steps-item-process .ant-steps-item-icon {
+                background-color: var(--green);
+                border-color: var(--green);
+            }
+        }
+
+        & .sub-section-card {
+            width: 75%;
+            display: flex;
+            justify-content: space-between;
+            gap: 22px;
+            min-height: calc(100vh - 220px);
+
+            & .booking-detail-card {
+                width: 65%;
+                padding: 20px 25px;
+                display: flex;
+                flex-direction: column;
+
+                & .title {
+                    font-weight: 700;
+                    color: var(--title-color-2);
+                    padding-bottom: 10px;
+                }
+
+                & .detail-container {
+                    padding: 0px 20px;
+                    display: flex;
+                    flex-direction: column;
+                    font-size: 14px;
+
+                    & .detail-table {
+                        margin: 10px 0px;
+                        border-radius: 15px;
+                        /* border-collapse: collapse; */
+                        overflow: hidden;
+
+                        & thead {
+                            background: var(--background-head-title);
+
+                            & th {
+                                padding: 6px 4px;
+
+                            }
+                        }
+
+                        & tbody {
+                            & td {
+                                padding: 6px 4px 6px 4px;
+                            }
+
+                            & .gap {
+                                height: 50px;
+                            }
+
+                            & .foot {
+                                background: rgb(245, 245, 245);
+
+                                & th {
+                                    padding: 8px 4px;
+                                }
+                            }
+                        }
+                    }
+
+                    & .special-Request {
+                        width: 100%;
+                        border: 1px solid var(--border-color-2);
+                        border-radius: 5px;
+                        outline: none;
+                        padding: 5px 20px;
+                    }
+                }
+            }
+
+            & .qr-code-card {
+                width: 35%;
+                height: auto;
+                display: flex;
+                flex-direction: column;
+                padding: 32px 12px;
+                align-items: center;
+                justify-content: center;
+
+                & .note-text{
+                    font-size: 16px;
+                    font-weight: 500;
+                    padding-bottom: 10px;
+
+                    & .star{
+                        color: var(--red);
+                    }
+                }
+
+                & .title {
+                    font-weight: 600;
+                }
+
+                & .img-box {
+                    width: 60%;
+                    border-radius: 5px;
+                    overflow: hidden;
+                    margin-top: 8px;
+                    margin-bottom: 12px;
+
+                    & img {
+                        width: 100%;
+                    }
+                }
+
+                & .no-data{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+
+                    & .img-box{
+                        width: 40px;
+                        height: 40px;
+                        overflow: hidden;
+
+                        & img {
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                        }
+                    }
+                }
+
+                & .btn {
+                    border: 2px solid transparent;
+                    color: var(--red);
+                    width: 70%;
+                    margin-top: 6px;
+                    height: 36px;
+                    font-weight: 500;
+                    transition: all 0.3s ease;
+                    border-radius: 5px;
+                }
+
+                & .confirm-booking-btn,
+                .re-upload-btn {
+                    border-color: var(--btn-color-1);
+                    color: var(--title-color-2);
+                    font-weight: 600;
+                }
+
+                & .confirm-booking-btn:hover,
+                .re-upload-btn:hover {
+                    background-color: var(--btn-color-1);
+                    color: var(--text-btn-color-1);
+                }
+
+                & .cancel-btn:hover {
+                    background-color: var(--red);
+                    color: var(--text-btn-color-1);
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1100px){
+    .check-payment-page{
+        .sub-section-card{
+            flex-direction: column;
+
+            .booking-detail-card.card, .qr-code-card.card{
+                width: 100%;
+            }
+
+            .qr-code-card.card{
+                padding: 32px 20%;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1050px){
+    .check-payment-page .payment-box-card .booking-step-card{
+        padding: 0px 22px;
+        padding-top: 8px;
+        overflow: scroll;
+        overflow-y: hidden;
+    }
+}

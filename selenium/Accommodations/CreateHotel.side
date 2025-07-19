@@ -1,0 +1,300 @@
+{
+  "id": "808f7386-5032-4d46-9e56-97b0adbe4291",
+  "version": "2.0",
+  "name": "CreateHotel",
+  "url": "http://localhost:5173",
+  "tests": [{
+    "id": "186eed5f-b3ba-47ce-a39d-0d5ee39197ca",
+    "name": "Success",
+    "commands": [{
+      "id": "dd2f2368-0e87-4c42-b28b-7ed968b940eb",
+      "comment": "",
+      "command": "open",
+      "target": "/Create/Hotel",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7965ffe5-c5d1-46f7-8b99-9028d2bef997",
+      "comment": "",
+      "command": "type",
+      "target": "name=hotel",
+      "targets": [
+        ["name=hotel", "name"],
+        ["css=.location-input", "css:finder"],
+        ["xpath=//input[@name='hotel']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div[2]/form/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "โรงแรมเซ็นทารา"
+    }, {
+      "id": "f0304be3-5f6f-402e-b9a4-1c23c6450d5d",
+      "comment": "",
+      "command": "type",
+      "target": "id=hotel-file-upload",
+      "targets": [
+        ["id=hotel-file-upload", "id"],
+        ["css=#hotel-file-upload", "css:finder"],
+        ["xpath=//input[@id='hotel-file-upload']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div[2]/form/div/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "C:\\Users\\wellc\\Downloads\\bea8847fa1e27e9680f349734c3072b6_1919x1079_crop_center.png"
+    }, {
+      "id": "7478f2b4-c630-4a5e-ad40-ae138813b7aa",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-submit",
+      "targets": [
+        ["css=.btn-submit", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div[2]/form/div[2]/button[3]", "xpath:idRelative"],
+        ["xpath=//button[3]", "xpath:position"],
+        ["xpath=//button[contains(.,'บันทึก')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "cb363650-01c5-4f6a-8562-6f0b0265ae7f",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.ant-message-custom-content > span:nth-child(2)",
+      "targets": [],
+      "value": "บันทึกข้อมูลเรียบร้อย"
+    }]
+  }, {
+    "id": "5d7b3931-769e-4d46-a1b1-c65bacb5b2af",
+    "name": "Hotelname is Invalid",
+    "commands": [{
+      "id": "ca0151e3-f6f2-4ce4-a1bf-7cbb1b65cd73",
+      "comment": "",
+      "command": "open",
+      "target": "/Create/Hotel",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0638813a-12d8-484a-8a65-11e3fb4ad121",
+      "comment": "",
+      "command": "type",
+      "target": "name=hotel",
+      "targets": [
+        ["name=hotel", "name"],
+        ["css=.location-input", "css:finder"],
+        ["xpath=//input[@name='hotel']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div[2]/form/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "1โรงแรมเซ็นทารา"
+    }, {
+      "id": "c9f7dffd-389d-4b40-9922-79057fb3da3e",
+      "comment": "",
+      "command": "type",
+      "target": "id=hotel-file-upload",
+      "targets": [
+        ["id=hotel-file-upload", "id"],
+        ["css=#hotel-file-upload", "css:finder"],
+        ["xpath=//input[@id='hotel-file-upload']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div[2]/form/div/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "C:\\Users\\wellc\\Downloads\\bea8847fa1e27e9680f349734c3072b6_1919x1079_crop_center.png"
+    }, {
+      "id": "832450e1-356f-4441-b13c-548a08c4b039",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-submit",
+      "targets": [
+        ["css=.btn-submit", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div[2]/form/div[2]/button[3]", "xpath:idRelative"],
+        ["xpath=//button[3]", "xpath:position"],
+        ["xpath=//button[contains(.,'บันทึก')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8f5dd523-806e-4f4a-84de-ca5a9c2f4110",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.ant-message-custom-content > span:nth-child(2)",
+      "targets": [],
+      "value": "โรงแรมที่ห้ามขึ้นต้นด้วยตัวเลขหรือตัวอักษรพิเศษ"
+    }]
+  }, {
+    "id": "86aed4ec-a1b4-47f4-a5bd-6222a883017f",
+    "name": "Can't Upload over 5 file",
+    "commands": [{
+      "id": "06bdfc95-cf95-40cd-9bd4-adcd278314ab",
+      "comment": "",
+      "command": "open",
+      "target": "/Create/Hotel",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6004ae39-c51e-48fd-bdf9-6f8c0ba66306",
+      "comment": "",
+      "command": "type",
+      "target": "name=hotel",
+      "targets": [
+        ["name=hotel", "name"],
+        ["css=.location-input", "css:finder"],
+        ["xpath=//input[@name='hotel']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div[2]/form/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "โรงแรมเซ็นทารา"
+    }, {
+      "id": "6cca3ec9-2d17-4026-8901-465548607b07",
+      "comment": "",
+      "command": "click",
+      "target": "css=.px-5",
+      "targets": [
+        ["css=.px-5", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[2]/form/div/div[2]/div/label", "xpath:idRelative"],
+        ["xpath=//div[2]/div/label", "xpath:position"],
+        ["xpath=//label[contains(.,'กรุณาเลือกรูปที่พัก')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c70370db-0e83-412d-88f2-d17d52c421b5",
+      "comment": "",
+      "command": "type",
+      "target": "id=hotel-file-upload",
+      "targets": [
+        ["id=hotel-file-upload", "id"],
+        ["css=#hotel-file-upload", "css:finder"],
+        ["xpath=//input[@id='hotel-file-upload']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div[2]/form/div/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "C:\\Users\\wellc\\Downloads\\bea8847fa1e27e9680f349734c3072b6_1919x1079_crop_center.png"
+    }, {
+      "id": "6c75528c-702e-4890-8c53-e24517008b6b",
+      "comment": "",
+      "command": "type",
+      "target": "id=hotel-file-upload",
+      "targets": [
+        ["id=hotel-file-upload", "id"],
+        ["css=#hotel-file-upload", "css:finder"],
+        ["xpath=//input[@id='hotel-file-upload']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div[2]/form/div/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "C:\\Users\\wellc\\Downloads\\Cart_Titan.png"
+    }, {
+      "id": "11c986f2-fe83-4878-88e6-06df20974efc",
+      "comment": "",
+      "command": "click",
+      "target": "css=.w-6:nth-child(2)",
+      "targets": [
+        ["css=.w-6:nth-child(2)", "css:finder"],
+        ["xpath=//img[@alt='รูปภาพที่พัก']", "xpath:img"],
+        ["xpath=//div[@id='root']/div/div[2]/form/div/div[2]/div/label/img", "xpath:idRelative"],
+        ["xpath=//label/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "12514039-c408-486d-8e3a-9106df6a8c8e",
+      "comment": "",
+      "command": "type",
+      "target": "id=hotel-file-upload",
+      "targets": [
+        ["id=hotel-file-upload", "id"],
+        ["css=#hotel-file-upload", "css:finder"],
+        ["xpath=//input[@id='hotel-file-upload']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div[2]/form/div/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "C:\\Users\\wellc\\Downloads\\ดีไซน์ที่ยังไม่ได้ตั้งชื่อ.png"
+    }, {
+      "id": "3fba8018-591a-4d93-9019-9fc81f800e40",
+      "comment": "",
+      "command": "click",
+      "target": "css=.px-5",
+      "targets": [
+        ["css=.px-5", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[2]/form/div/div[2]/div/label", "xpath:idRelative"],
+        ["xpath=//div[2]/div/label", "xpath:position"],
+        ["xpath=//label[contains(.,'กรุณาเลือกรูปที่พัก')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "115abc1b-34a5-4e6d-8a0a-6654de6aa37b",
+      "comment": "",
+      "command": "type",
+      "target": "id=hotel-file-upload",
+      "targets": [
+        ["id=hotel-file-upload", "id"],
+        ["css=#hotel-file-upload", "css:finder"],
+        ["xpath=//input[@id='hotel-file-upload']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div[2]/form/div/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "C:\\Users\\wellc\\Downloads\\AoT-3DS-Dated_11-15-16.jpg"
+    }, {
+      "id": "b17baef5-ef19-4b39-98f7-f7bcb878f84b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.w-6:nth-child(2)",
+      "targets": [
+        ["css=.w-6:nth-child(2)", "css:finder"],
+        ["xpath=//img[@alt='รูปภาพที่พัก']", "xpath:img"],
+        ["xpath=//div[@id='root']/div/div[2]/form/div/div[2]/div/label/img", "xpath:idRelative"],
+        ["xpath=//label/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "cbbc29f3-87d1-412b-b300-487c30c5d15a",
+      "comment": "",
+      "command": "type",
+      "target": "id=hotel-file-upload",
+      "targets": [
+        ["id=hotel-file-upload", "id"],
+        ["css=#hotel-file-upload", "css:finder"],
+        ["xpath=//input[@id='hotel-file-upload']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div[2]/form/div/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "C:\\Users\\wellc\\Downloads\\4a017486-5fe4-4772-93bf-b969fe43e538.jpg"
+    }, {
+      "id": "a283b488-5516-4d9d-96f7-238f8ec37c71",
+      "comment": "",
+      "command": "click",
+      "target": "css=.w-6:nth-child(2)",
+      "targets": [
+        ["css=.w-6:nth-child(2)", "css:finder"],
+        ["xpath=//img[@alt='รูปภาพที่พัก']", "xpath:img"],
+        ["xpath=//div[@id='root']/div/div[2]/form/div/div[2]/div/label/img", "xpath:idRelative"],
+        ["xpath=//label/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "10b03492-6337-49c4-b1a9-ca363c97420e",
+      "comment": "",
+      "command": "type",
+      "target": "id=hotel-file-upload",
+      "targets": [
+        ["id=hotel-file-upload", "id"],
+        ["css=#hotel-file-upload", "css:finder"],
+        ["xpath=//input[@id='hotel-file-upload']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div[2]/form/div/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "C:\\Users\\wellc\\Downloads\\image1_0 (1).jpg"
+    }, {
+      "id": "b09ec51a-bd74-458a-8621-1c31edf6e2bb",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.ant-message-custom-content > span:nth-child(2)",
+      "targets": [],
+      "value": "คุณสามารถอัพโหลดรูปภาพได้ไม่เกิน 5 รูป"
+    }]
+  }],
+  "suites": [{
+    "id": "d1b315d8-38e1-4fa4-bea9-b7498942f80d",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["186eed5f-b3ba-47ce-a39d-0d5ee39197ca"]
+  }],
+  "urls": ["http://localhost:5173/"],
+  "plugins": []
+}

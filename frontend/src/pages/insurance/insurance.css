@@ -1,0 +1,45 @@
+.insurance{
+    .insurance-page {
+        background-color: white; 
+        min-height: 100vh;      
+        padding: 20px;         
+    }
+
+
+    .insurance-card{
+        display: flex;
+        flex-direction: column;  
+        width: 100%;  
+        max-width: 100%;  
+        margin: 20px auto; 
+        padding: 20px;  
+        font-size: 18px;  
+        box-sizing: border-box;  
+        border-radius: 8px;   
+        
+    }
+    .insurance-table{
+        display: flex;
+        width: 100%; 
+        max-width: 100%;  
+        margin: 0 auto;  
+        font-size: 16px;  
+        padding: 10px;  
+    }
+    
+    .insurance-table-content thead th {
+        background-color: #000000; 
+        color: #ffffff; 
+        font-size: 16px; 
+        font-weight: bold; 
+        text-align: center; 
+        border: none !important;
+      }
+    
+      .insurance-table-content tbody tr {
+        background-color: #ffffff; 
+        color: #000000; 
+        font-size: 16px;  
+        text-align: center; 
+      }
+}

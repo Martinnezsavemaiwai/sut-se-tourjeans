@@ -1,0 +1,90 @@
+@import "../../styles/ColorSheet.css";
+
+.calendar-container {
+    width: 85%;
+    box-shadow: 0 0px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    background-color: var(--white);
+    display: flex;
+    flex-direction: column;
+
+    & .calendar-header {
+        height: 60px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+        border-radius: 10px 10px 0px 0px;
+        background: var(--orange-yellow-for-bg);
+        font-weight: 700;
+
+        & .btn {
+            background: none;
+            border: none;
+            color: #fff;
+            font-size: 18px;
+            cursor: pointer;
+        }
+    }
+
+    & .date-box{
+        padding: 0px 10px 10px 10px;
+
+        & .calendar-table {
+            width: 100%;
+            border-collapse: collapse;
+            border-collapse: separate;
+            border-spacing: 10px;
+    
+            & th, td{
+                width: 14.28%;
+                min-width: 38px;
+                height: 40px;
+                text-align: center;
+                cursor: pointer;
+                font-size: 0.8rem;
+            }
+    
+            & td{
+                background-color: #F0F0F0;
+                font-weight: 500;
+
+                & .calendar-day{
+                    width: 100%;
+                    height: 100%;
+                    border: 0px;
+                }
+
+                & .available {
+                    background-color: #b9e96c96;
+                    transition: all ease 0.3s;
+                }
+        
+                & .available:hover {
+                    background-color: var(--green);
+                    color: #fff;
+                    font-weight: 700;
+                }
+        
+                & .selected {
+                    background-color: var(--green);
+                    color: #fff;
+                    font-weight: 700;
+                    transition: all ease 0.3s;
+                }
+    
+                & .full {
+                    background-color: var(--red);
+                    color: #fff;
+                    font-weight: 700;
+                }
+            } 
+        }
+    }
+}
+
+@media only screen and (max-width: 1650px){
+    .calendar-container{
+        min-width: 365px;
+    }
+}

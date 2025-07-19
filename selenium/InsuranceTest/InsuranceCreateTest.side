@@ -1,0 +1,240 @@
+{
+  "id": "cd2901d1-8a49-4d29-b639-f8bfac0880bd",
+  "version": "2.0",
+  "name": "InsuranceCreate.side",
+  "url": "http://localhost:5173",
+  "tests": [{
+    "id": "1d26942a-1842-42c5-a3e3-a0416991eb2f",
+    "name": "InsuranceCreate.side",
+    "commands": [{
+      "id": "72c952d5-3bf9-4966-a7c7-4edbd74d763b",
+      "comment": "",
+      "command": "open",
+      "target": "/payment",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5b0ddcc1-f615-4d14-9a44-ec2939cc459d",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1050x728",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "59246697-57ca-4b1e-98be-4a4553141e84",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ant-btn-primary > span",
+      "targets": [
+        ["css=.ant-btn-primary > span", "css:finder"],
+        ["xpath=//div[@id='root']/div/section/div[2]/div/div[2]/div[2]/button/span", "xpath:idRelative"],
+        ["xpath=//button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'ซื้อประกันการเดินทาง')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ca818f7c-39cd-4b2e-ac10-10f3ff813535",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ant-col:nth-child(2) span",
+      "targets": [
+        ["css=.ant-col:nth-child(2) span", "css:finder"],
+        ["xpath=//div[2]/div/div[2]/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "651e26b6-f6ff-41ac-bd27-86c230068450",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.ant-col:nth-child(2) span",
+      "targets": [
+        ["css=.ant-col:nth-child(2) span", "css:finder"],
+        ["xpath=//div[2]/div/div[2]/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "333f47e6-6dd8-4780-9208-a319d3c7880d",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.ant-col:nth-child(2) > .ant-card span",
+      "targets": [
+        ["css=.ant-col:nth-child(2) > .ant-card span", "css:finder"],
+        ["xpath=//div[2]/div/div[2]/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "97cb8b0e-2b45-4252-aaca-2f9b9e19cbb9",
+      "comment": "",
+      "command": "click",
+      "target": "id=Firstname",
+      "targets": [
+        ["id=Firstname", "id"],
+        ["css=#Firstname", "css:finder"],
+        ["xpath=//input[@id='Firstname']", "xpath:attributes"],
+        ["xpath=//div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8ddcbb7a-649f-42b2-94bc-b3265a38ec88",
+      "comment": "",
+      "command": "type",
+      "target": "id=Firstname",
+      "targets": [
+        ["id=Firstname", "id"],
+        ["css=#Firstname", "css:finder"],
+        ["xpath=//input[@id='Firstname']", "xpath:attributes"],
+        ["xpath=//div/div/input", "xpath:position"]
+      ],
+      "value": "daddsaasd"
+    }, {
+      "id": "1dfa58f5-ddd2-44d9-bad0-0fdc44b8b681",
+      "comment": "",
+      "command": "type",
+      "target": "id=Lastname",
+      "targets": [
+        ["id=Lastname", "id"],
+        ["css=#Lastname", "css:finder"],
+        ["xpath=//input[@id='Lastname']", "xpath:attributes"],
+        ["xpath=//div[2]/div/div[2]/div/div/input", "xpath:position"]
+      ],
+      "value": "asdasda"
+    }, {
+      "id": "6ad98cff-b89a-4afd-997d-ebc42226f77a",
+      "comment": "",
+      "command": "type",
+      "target": "id=PhoneNumber",
+      "targets": [
+        ["id=PhoneNumber", "id"],
+        ["css=#PhoneNumber", "css:finder"],
+        ["xpath=//input[@id='PhoneNumber']", "xpath:attributes"],
+        ["xpath=//div[3]/div/div[2]/div/div/input", "xpath:position"]
+      ],
+      "value": "0812345678"
+    }, {
+      "id": "0a3cdfd9-01e7-40e2-abe1-2c2bc18c33fd",
+      "comment": "",
+      "command": "click",
+      "target": "id=IdCardNumber",
+      "targets": [
+        ["id=IdCardNumber", "id"],
+        ["css=#IdCardNumber", "css:finder"],
+        ["xpath=//input[@id='IdCardNumber']", "xpath:attributes"],
+        ["xpath=//div[4]/div/div[2]/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9fe94d4b-a4d9-4fe6-9c71-4c04699fb92f",
+      "comment": "",
+      "command": "type",
+      "target": "id=IdCardNumber",
+      "targets": [
+        ["id=IdCardNumber", "id"],
+        ["css=#IdCardNumber", "css:finder"],
+        ["xpath=//input[@id='IdCardNumber']", "xpath:attributes"],
+        ["xpath=//div[4]/div/div[2]/div/div/input", "xpath:position"]
+      ],
+      "value": "1309900221345"
+    }, {
+      "id": "3adbfd4e-21b2-49d1-8911-34d57b572b7d",
+      "comment": "",
+      "command": "click",
+      "target": "id=Age",
+      "targets": [
+        ["id=Age", "id"],
+        ["css=#Age", "css:finder"],
+        ["xpath=//input[@id='Age']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2029d43d-d4f6-4068-a13f-f0924422486b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ant-input-number-status-success .ant-input-number-handler-up",
+      "targets": [
+        ["css=.ant-input-number-status-success .ant-input-number-handler-up", "css:finder"],
+        ["xpath=//div[2]/div/div/div/div/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d607d18e-80ee-41e7-a09c-1d2dfb782605",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ant-form-item:nth-child(6) .ant-input-number-handler:nth-child(1) svg:nth-child(1)",
+      "targets": [
+        ["css=.ant-form-item:nth-child(6) .ant-input-number-handler:nth-child(1) svg:nth-child(1)", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "8fcee2f2-48d4-4ae3-93de-7f876151d5cc",
+      "comment": "",
+      "command": "click",
+      "target": "id=Detail",
+      "targets": [
+        ["id=Detail", "id"],
+        ["css=#Detail", "css:finder"],
+        ["xpath=//textarea[@id='Detail']", "xpath:attributes"],
+        ["xpath=//div/div[2]/div/div/textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f719b5ca-80dd-45a7-be2f-684a9060d5ca",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ant-btn-block",
+      "targets": [
+        ["css=.ant-btn-block", "css:finder"],
+        ["xpath=(//button[@type='submit'])[3]", "xpath:attributes"],
+        ["xpath=//div[9]/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Submit')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f261b901-3e99-4b0d-846a-a86c2f58207c",
+      "comment": "",
+      "command": "click",
+      "target": "id=Detail",
+      "targets": [
+        ["id=Detail", "id"],
+        ["css=#Detail", "css:finder"],
+        ["xpath=//textarea[@id='Detail']", "xpath:attributes"],
+        ["xpath=//div/div[2]/div/div/textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f66d319e-3edf-46d5-b3a5-0b586857c806",
+      "comment": "",
+      "command": "type",
+      "target": "id=Detail",
+      "targets": [
+        ["id=Detail", "id"],
+        ["css=#Detail", "css:finder"],
+        ["xpath=//textarea[@id='Detail']", "xpath:attributes"],
+        ["xpath=//div/div[2]/div/div/textarea", "xpath:position"]
+      ],
+      "value": "none"
+    }, {
+      "id": "74dc97a6-7b45-46b6-968b-63c9ce01f145",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ant-btn-block",
+      "targets": [
+        ["css=.ant-btn-block", "css:finder"],
+        ["xpath=(//button[@type='submit'])[3]", "xpath:attributes"],
+        ["xpath=//div[9]/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Submit')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "1a4e0367-833d-4be3-939f-17ef0c85516f",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["1d26942a-1842-42c5-a3e3-a0416991eb2f"]
+  }],
+  "urls": ["http://localhost:5173/"],
+  "plugins": []
+}

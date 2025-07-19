@@ -1,0 +1,638 @@
+{
+  "id": "cfc78db6-ef3e-4a32-a42b-c18af6be00f3",
+  "version": "2.0",
+  "name": "CreateTransportations",
+  "url": "http://localhost:5173/Create/TravelManagement",
+  "tests": [{
+    "id": "0a324862-8b88-4bdd-ba95-d7ecdba77f75",
+    "name": "Fail1",
+    "commands": [{
+      "id": "2b8c78e2-eef8-4692-98f9-9af9e49d921c",
+      "comment": "",
+      "command": "open",
+      "target": "/Create/TravelManagement",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e5fcb01b-4723-45ae-aecf-8f185df9f908",
+      "comment": "",
+      "command": "click",
+      "target": "css=.react-datepicker-ignore-onclickoutside",
+      "targets": [
+        ["css=.react-datepicker-ignore-onclickoutside", "css:finder"],
+        ["xpath=//input[@value='']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div[2]/form/div/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4349cfe9-3907-4586-bb3b-3276133e7588",
+      "comment": "",
+      "command": "click",
+      "target": "css=.react-datepicker__time-list-item:nth-child(2)",
+      "targets": [
+        ["css=.react-datepicker__time-list-item:nth-child(2)", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[2]/form/div/div/div/div[2]/div[2]/div/div/div[2]/div[2]/div/ul/li[2]", "xpath:idRelative"],
+        ["xpath=//li[2]", "xpath:position"],
+        ["xpath=//li[contains(.,'00:15')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9dc02a47-f2d4-4d1d-8d72-89b7b02d5139",
+      "comment": "",
+      "command": "click",
+      "target": "css=.react-datepicker-ignore-onclickoutside",
+      "targets": [
+        ["css=.react-datepicker-ignore-onclickoutside", "css:finder"],
+        ["xpath=(//input[@value=''])[3]", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div[2]/form/div/div[2]/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//form/div/div[2]/div/div/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2b786189-122b-43f7-882e-04700068abe5",
+      "comment": "",
+      "command": "click",
+      "target": "css=.react-datepicker__time-list-item:nth-child(3)",
+      "targets": [
+        ["css=.react-datepicker__time-list-item:nth-child(3)", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[2]/form/div/div[2]/div/div/div[2]/div[2]/div/div/div[2]/div[2]/div/ul/li[3]", "xpath:idRelative"],
+        ["xpath=//li[3]", "xpath:position"],
+        ["xpath=//li[contains(.,'00:30')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ce7ab7cd-11c2-415a-bf0a-168c2ca97d36",
+      "comment": "",
+      "command": "click",
+      "target": "css=.css-15lsz6c-indicatorContainer",
+      "targets": [
+        ["css=.css-15lsz6c-indicatorContainer", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[2]/form/div/div/div[2]/div/div/div[2]/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div[2]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7e6fa2ff-436b-4ec8-9910-cc8e1050873a",
+      "comment": "",
+      "command": "click",
+      "target": "id=react-select-9-option-0",
+      "targets": [
+        ["id=react-select-9-option-0", "id"],
+        ["css=#react-select-9-option-0", "css:finder"],
+        ["xpath=//div[@id='react-select-9-option-0']", "xpath:attributes"],
+        ["xpath=//div[@id='react-select-9-listbox']/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div[2]/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9cc5b22d-041e-413a-879a-64ed1ceff3b9",
+      "comment": "",
+      "command": "click",
+      "target": "css=.react-select__control--is-focused .react-select__input-container",
+      "targets": [
+        ["css=.react-select__control--is-focused .react-select__input-container", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[2]/form/div/div[2]/div[2]/div/div/div/div[2]", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/div/div/div/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7e3674fa-0835-4ead-9ed9-5ceb0ce0025a",
+      "comment": "",
+      "command": "type",
+      "target": "id=react-select-5-input",
+      "targets": [
+        ["id=react-select-5-input", "id"],
+        ["css=#react-select-5-input", "css:finder"],
+        ["xpath=//input[@id='react-select-5-input']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div[2]/form/div/div/div[3]/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/div/div/input", "xpath:position"]
+      ],
+      "value": "ระนอง"
+    }, {
+      "id": "3757a504-6546-47f7-a76d-d4b83c61207d",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "id=react-select-5-input",
+      "targets": [
+        ["id=react-select-5-input", "id"],
+        ["css=#react-select-5-input", "css:finder"],
+        ["xpath=//input[@id='react-select-5-input']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div[2]/form/div/div/div[3]/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/div/div/input", "xpath:position"]
+      ],
+      "value": "${KEY_DOWN}"
+    }, {
+      "id": "95344b34-ac9e-438f-8e9b-cf5365634086",
+      "comment": "",
+      "command": "click",
+      "target": "id=react-select-5-option-48",
+      "targets": [
+        ["id=react-select-5-option-48", "id"],
+        ["css=#react-select-5-option-48", "css:finder"],
+        ["xpath=//div[@id='react-select-5-option-48']", "xpath:attributes"],
+        ["xpath=//div[@id='react-select-5-listbox']/div[2]", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d1806b19-0167-427a-9a21-144259e1d97f",
+      "comment": "",
+      "command": "click",
+      "target": "name=location",
+      "targets": [
+        ["name=location", "name"],
+        ["css=.location-input", "css:finder"],
+        ["xpath=//input[@name='location']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div[2]/form/div/div[2]/div[3]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3270bab2-a833-4392-a579-d4ee03ec106d",
+      "comment": "",
+      "command": "type",
+      "target": "name=location",
+      "targets": [
+        ["name=location", "name"],
+        ["css=.location-input", "css:finder"],
+        ["xpath=//input[@name='location']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div[2]/form/div/div[2]/div[3]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": "วัดพระแก้ว"
+    }, {
+      "id": "5f3b53a9-d159-4767-a4b4-2632582c92b6",
+      "comment": "",
+      "command": "click",
+      "target": "css=.text-white",
+      "targets": [
+        ["css=.text-white", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div[2]/form/div[2]/button[3]", "xpath:idRelative"],
+        ["xpath=//button[3]", "xpath:position"],
+        ["xpath=//button[contains(.,'บันทึก')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2e297557-f8fd-4e5e-a178-9c9451bceb48",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.text-white",
+      "targets": [
+        ["css=.text-white", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div[2]/form/div[2]/button[3]", "xpath:idRelative"],
+        ["xpath=//button[3]", "xpath:position"],
+        ["xpath=//button[contains(.,'บันทึก')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a819607a-74f7-4588-a1fa-a3eb1cf458d0",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.ant-message-custom-content > span:nth-child(2)",
+      "targets": [
+        ["css=.min-h-screen", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[2]", "xpath:idRelative"],
+        ["xpath=//div/div[2]", "xpath:position"]
+      ],
+      "value": "กรุณากรอกข้อมูลให้ครบถ้วน"
+    }]
+  }, {
+    "id": "57c9fdd4-387a-4e96-8443-1989206b7726",
+    "name": "Success",
+    "commands": [{
+      "id": "928c4591-0e9a-4943-b53e-31f91cc2e9e0",
+      "comment": "",
+      "command": "open",
+      "target": "/Create/TravelManagement",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "04243dae-311e-4175-bf77-655cbd3ea6c9",
+      "comment": "",
+      "command": "click",
+      "target": "css=.react-datepicker-ignore-onclickoutside",
+      "targets": [
+        ["css=.react-datepicker-ignore-onclickoutside", "css:finder"],
+        ["xpath=//input[@value='']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div[2]/form/div/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "40400628-ddc2-491d-bfbb-0ec2c831f9cc",
+      "comment": "",
+      "command": "click",
+      "target": "css=.react-datepicker__time-list-item:nth-child(2)",
+      "targets": [
+        ["css=.react-datepicker__time-list-item:nth-child(2)", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[2]/form/div/div/div/div[2]/div[2]/div/div/div[2]/div[2]/div/ul/li[2]", "xpath:idRelative"],
+        ["xpath=//li[2]", "xpath:position"],
+        ["xpath=//li[contains(.,'00:15')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8942fac0-0681-4072-b29e-9799b7791cf2",
+      "comment": "",
+      "command": "click",
+      "target": "css=.react-datepicker-ignore-onclickoutside",
+      "targets": [
+        ["css=.react-datepicker-ignore-onclickoutside", "css:finder"],
+        ["xpath=(//input[@value=''])[3]", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div[2]/form/div/div[2]/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//form/div/div[2]/div/div/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3af76922-2944-4833-b3ba-1a7322a8dd93",
+      "comment": "",
+      "command": "click",
+      "target": "css=.react-datepicker__time-list-item:nth-child(3)",
+      "targets": [
+        ["css=.react-datepicker__time-list-item:nth-child(3)", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[2]/form/div/div[2]/div/div/div[2]/div[2]/div/div/div[2]/div[2]/div/ul/li[3]", "xpath:idRelative"],
+        ["xpath=//li[3]", "xpath:position"],
+        ["xpath=//li[contains(.,'00:30')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "59a8868e-8aef-432f-a867-ca0fcdecb197",
+      "comment": "",
+      "command": "click",
+      "target": "css=.css-15lsz6c-indicatorContainer",
+      "targets": [
+        ["css=.css-15lsz6c-indicatorContainer", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[2]/form/div/div/div[2]/div/div/div[2]/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div[2]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9aad7778-a2b9-41c5-b120-b817cb160fd4",
+      "comment": "",
+      "command": "click",
+      "target": "id=react-select-9-option-0",
+      "targets": [
+        ["id=react-select-9-option-0", "id"],
+        ["css=#react-select-9-option-0", "css:finder"],
+        ["xpath=//div[@id='react-select-9-option-0']", "xpath:attributes"],
+        ["xpath=//div[@id='react-select-9-listbox']/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div[2]/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1d29c643-0466-4ed1-8e32-0d6e1aecfc33",
+      "comment": "",
+      "command": "mouseDown",
+      "target": "css=.react-select__control--is-focused > .react-select__value-container",
+      "targets": [
+        ["css=.react-select__control--is-focused > .react-select__value-container", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[2]/form/div/div[2]/div[2]/div/div/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "65f24128-eba7-45b9-9199-0a246c4d8c39",
+      "comment": "",
+      "command": "click",
+      "target": "css=.react-select__control--is-focused .react-select__input-container",
+      "targets": [
+        ["css=.react-select__control--is-focused .react-select__input-container", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[2]/form/div/div[2]/div[2]/div/div/div/div[2]", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/div/div/div/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "553c5374-a8e2-4985-b6da-95bdb39d7739",
+      "comment": "",
+      "command": "click",
+      "target": "css=.space-y-4:nth-child(2) .css-b62m3t-container",
+      "targets": [
+        ["css=.space-y-4:nth-child(2) .css-b62m3t-container", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[2]/form/div/div[2]/div[2]/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "64df8063-512f-4d75-a877-c80bf245db53",
+      "comment": "",
+      "command": "click",
+      "target": "css=.react-select__control--is-focused .react-select__input-container",
+      "targets": [
+        ["css=.react-select__control--is-focused .react-select__input-container", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[2]/form/div/div[2]/div[2]/div/div/div/div[2]", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/div/div/div/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "53700a56-d92e-4e49-ae08-6a68dc2471c4",
+      "comment": "",
+      "command": "click",
+      "target": "id=react-select-7-option-0",
+      "targets": [
+        ["id=react-select-9-option-0", "id"],
+        ["css=#react-select-9-option-0", "css:finder"],
+        ["xpath=//div[@id='react-select-9-option-0']", "xpath:attributes"],
+        ["xpath=//div[@id='react-select-9-listbox']/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div[2]/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2f55d20b-a639-4a1e-a54c-7652114f4bae",
+      "comment": "",
+      "command": "type",
+      "target": "id=react-select-5-input",
+      "targets": [
+        ["id=react-select-5-input", "id"],
+        ["css=#react-select-5-input", "css:finder"],
+        ["xpath=//input[@id='react-select-5-input']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div[2]/form/div/div/div[3]/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/div/div/input", "xpath:position"]
+      ],
+      "value": "ระนอง"
+    }, {
+      "id": "ecab0007-d33d-4c1e-94d3-3cce1acba89a",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "id=react-select-5-input",
+      "targets": [
+        ["id=react-select-5-input", "id"],
+        ["css=#react-select-5-input", "css:finder"],
+        ["xpath=//input[@id='react-select-5-input']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div[2]/form/div/div/div[3]/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/div/div/input", "xpath:position"]
+      ],
+      "value": "${KEY_DOWN}"
+    }, {
+      "id": "f3149990-895d-4b6a-a270-faa8f7cb1575",
+      "comment": "",
+      "command": "click",
+      "target": "id=react-select-5-option-48",
+      "targets": [
+        ["id=react-select-5-option-48", "id"],
+        ["css=#react-select-5-option-48", "css:finder"],
+        ["xpath=//div[@id='react-select-5-option-48']", "xpath:attributes"],
+        ["xpath=//div[@id='react-select-5-listbox']/div[2]", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "94733d95-467f-4fee-a216-c1e45764c4e8",
+      "comment": "",
+      "command": "click",
+      "target": "name=location",
+      "targets": [
+        ["name=location", "name"],
+        ["css=.location-input", "css:finder"],
+        ["xpath=//input[@name='location']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div[2]/form/div/div[2]/div[3]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5e557115-efca-4b35-9155-83f2b0a5ea8b",
+      "comment": "",
+      "command": "type",
+      "target": "name=location",
+      "targets": [
+        ["name=location", "name"],
+        ["css=.location-input", "css:finder"],
+        ["xpath=//input[@name='location']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div[2]/form/div/div[2]/div[3]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": "วัดพระแก้ว"
+    }, {
+      "id": "c66e1fc8-7c6c-4c18-9e54-b66940be1f08",
+      "comment": "",
+      "command": "click",
+      "target": "css=.text-white",
+      "targets": [
+        ["css=.text-white", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div[2]/form/div[2]/button[3]", "xpath:idRelative"],
+        ["xpath=//button[3]", "xpath:position"],
+        ["xpath=//button[contains(.,'บันทึก')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "61045691-31f0-45b4-9e5b-a8b9c7b9f922",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.ant-message-custom-content > span:nth-child(2)",
+      "targets": [
+        ["css=.min-h-screen", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[2]", "xpath:idRelative"],
+        ["xpath=//div/div[2]", "xpath:position"]
+      ],
+      "value": "สร้างข้อมูลสำเร็จ!"
+    }]
+  }, {
+    "id": "a0b93755-2f0c-4ea6-b408-b1ee3ac76d33",
+    "name": "Fail2",
+    "commands": [{
+      "id": "84e06565-3e11-4204-8e39-e5d5c2117821",
+      "comment": "",
+      "command": "open",
+      "target": "/Create/TravelManagement",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5b32f5e8-2a25-4e04-bd33-c8ac8cf38939",
+      "comment": "",
+      "command": "click",
+      "target": "css=.react-datepicker-ignore-onclickoutside",
+      "targets": [
+        ["css=.react-datepicker-ignore-onclickoutside", "css:finder"],
+        ["xpath=//input[@value='']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div[2]/form/div/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "602b9cc0-a423-43b6-8034-07dea228e0c5",
+      "comment": "",
+      "command": "click",
+      "target": "css=.react-datepicker__time-list-item:nth-child(2)",
+      "targets": [
+        ["css=.react-datepicker__time-list-item:nth-child(2)", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[2]/form/div/div/div/div[2]/div[2]/div/div/div[2]/div[2]/div/ul/li[2]", "xpath:idRelative"],
+        ["xpath=//li[2]", "xpath:position"],
+        ["xpath=//li[contains(.,'00:15')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "721e70f9-a7ce-498f-b04f-9b7284141f78",
+      "comment": "",
+      "command": "click",
+      "target": "css=.react-datepicker-ignore-onclickoutside",
+      "targets": [
+        ["css=.react-datepicker-ignore-onclickoutside", "css:finder"],
+        ["xpath=(//input[@value=''])[3]", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div[2]/form/div/div[2]/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//form/div/div[2]/div/div/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5831070b-34f7-42ee-99de-83c233ffe5c5",
+      "comment": "",
+      "command": "click",
+      "target": "css=.react-datepicker__time-list-item:nth-child(3)",
+      "targets": [
+        ["css=.react-datepicker__time-list-item:nth-child(3)", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[2]/form/div/div[2]/div/div/div[2]/div[2]/div/div/div[2]/div[2]/div/ul/li[3]", "xpath:idRelative"],
+        ["xpath=//li[3]", "xpath:position"],
+        ["xpath=//li[contains(.,'00:30')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "50cb16a0-6962-4169-bcf5-866169fe1942",
+      "comment": "",
+      "command": "click",
+      "target": "css=.css-15lsz6c-indicatorContainer",
+      "targets": [
+        ["css=.css-15lsz6c-indicatorContainer", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[2]/form/div/div/div[2]/div/div/div[2]/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div[2]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "33e8ca7b-d993-4df3-97ac-c3278cfe832a",
+      "comment": "",
+      "command": "click",
+      "target": "id=react-select-9-option-0",
+      "targets": [
+        ["id=react-select-9-option-0", "id"],
+        ["css=#react-select-9-option-0", "css:finder"],
+        ["xpath=//div[@id='react-select-9-option-0']", "xpath:attributes"],
+        ["xpath=//div[@id='react-select-9-listbox']/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div[2]/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6eb97427-7ab5-450a-a9f7-be4683ae2372",
+      "comment": "",
+      "command": "click",
+      "target": "css=.react-select__control--is-focused .react-select__input-container",
+      "targets": [
+        ["css=.react-select__control--is-focused .react-select__input-container", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[2]/form/div/div[2]/div[2]/div/div/div/div[2]", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/div/div/div/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2d957d85-da2f-4a61-9321-0876dc301df6",
+      "comment": "",
+      "command": "type",
+      "target": "id=react-select-5-input",
+      "targets": [
+        ["id=react-select-5-input", "id"],
+        ["css=#react-select-5-input", "css:finder"],
+        ["xpath=//input[@id='react-select-5-input']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div[2]/form/div/div/div[3]/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/div/div/input", "xpath:position"]
+      ],
+      "value": "ระนอง"
+    }, {
+      "id": "7340579e-725f-4ee3-bb9b-4c6623972df1",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "id=react-select-5-input",
+      "targets": [
+        ["id=react-select-5-input", "id"],
+        ["css=#react-select-5-input", "css:finder"],
+        ["xpath=//input[@id='react-select-5-input']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div[2]/form/div/div/div[3]/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/div/div/input", "xpath:position"]
+      ],
+      "value": "${KEY_DOWN}"
+    }, {
+      "id": "e3bc8ab6-c8cc-4980-9f8a-7ba2798c0abf",
+      "comment": "",
+      "command": "click",
+      "target": "id=react-select-5-option-48",
+      "targets": [
+        ["id=react-select-5-option-48", "id"],
+        ["css=#react-select-5-option-48", "css:finder"],
+        ["xpath=//div[@id='react-select-5-option-48']", "xpath:attributes"],
+        ["xpath=//div[@id='react-select-5-listbox']/div[2]", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "71906506-d683-4eb1-abea-8d4080b9c3f0",
+      "comment": "",
+      "command": "click",
+      "target": "name=location",
+      "targets": [
+        ["name=location", "name"],
+        ["css=.location-input", "css:finder"],
+        ["xpath=//input[@name='location']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div[2]/form/div/div[2]/div[3]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3e4729c6-6f9c-4095-b9f2-37c07855f034",
+      "comment": "",
+      "command": "type",
+      "target": "name=location",
+      "targets": [
+        ["name=location", "name"],
+        ["css=.location-input", "css:finder"],
+        ["xpath=//input[@name='location']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div[2]/form/div/div[2]/div[3]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": "1วัดพระแก้ว"
+    }, {
+      "id": "e05dcbb5-5d36-4ec7-9d42-4bfd2a9d6aa9",
+      "comment": "",
+      "command": "click",
+      "target": "css=.text-white",
+      "targets": [
+        ["css=.text-white", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div[2]/form/div[2]/button[3]", "xpath:idRelative"],
+        ["xpath=//button[3]", "xpath:position"],
+        ["xpath=//button[contains(.,'บันทึก')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0bc41655-53d8-4544-bdbe-2bdcc0b00d38",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.text-white",
+      "targets": [
+        ["css=.text-white", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div[2]/form/div[2]/button[3]", "xpath:idRelative"],
+        ["xpath=//button[3]", "xpath:position"],
+        ["xpath=//button[contains(.,'บันทึก')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "099e5a46-d1e0-4686-ae10-cd3d8c124d58",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.ant-message-custom-content > span:nth-child(2)",
+      "targets": [
+        ["css=.min-h-screen", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[2]", "xpath:idRelative"],
+        ["xpath=//div/div[2]", "xpath:position"]
+      ],
+      "value": "สถานที่ห้ามขึ้นต้นด้วยตัวเลขหรือตัวอักษรพิเศษ"
+    }]
+  }],
+  "suites": [{
+    "id": "64c16418-0a08-4634-b48a-fb37c42145f6",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["0a324862-8b88-4bdd-ba95-d7ecdba77f75"]
+  }],
+  "urls": ["http://localhost:5173/", "http://localhost:5173/Create/TravelManagement"],
+  "plugins": []
+}

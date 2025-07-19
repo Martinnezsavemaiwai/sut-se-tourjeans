@@ -1,0 +1,101 @@
+.dashboard{
+  height: 92vh;
+  overflow: scroll;
+  overflow-x: hidden;
+
+    .dashboard-page {
+        background-color: white; 
+        min-height: 100vh;      
+        padding: 20px;         
+    }
+    .icon-box1 {
+        width: 48px;
+        height: 48px;
+        text-align: center;
+        background: #cde401;
+        color: #ffffff;
+        border-radius: 0.5rem;
+        margin-left: auto;
+        line-height: 47px;
+        font-size: 32px;
+      }
+      .icon-box2 {
+        width: 48px;
+        height: 48px;
+        text-align: center;
+        background: #d80303;
+        color: #ffffff;
+        border-radius: 0.5rem;
+        margin-left: auto;
+        line-height: 47px;
+        font-size: 32px;
+      }
+      .icon-box3 {
+        width: 48px;
+        height: 48px;
+        text-align: center;
+        background: #15d803;
+        color: #ffffff;
+        border-radius: 0.5rem;
+        margin-left: auto;
+        line-height: 47px;
+        font-size: 32px;
+      }
+      .icon-box4 {
+        width: 48px;
+        height: 48px;
+        text-align: center;
+        background: #2303d8;
+        color: #ffffff;
+        border-radius: 0.5rem;
+        margin-left: auto;
+        line-height: 47px;
+        font-size: 32px;
+      }
+
+      .dashboard-sales-table-content thead th {
+        background-color: #000000; 
+        color: #ffffff; 
+        font-size: 16px; 
+        font-weight: bold; 
+        text-align: center; 
+        border: none !important;
+      } 
+
+      .dashboard-sales-table-content tbody tr {
+        background-color: #ffffff; 
+        color: #000000; 
+        font-size: 16px;  
+        text-align: center; 
+      }
+
+      .dashboard-book-table-content thead th {
+        background-color: #000000; 
+        color: #ffffff; 
+        font-size: 16px; 
+        font-weight: bold; 
+        text-align: center; 
+        border: none !important;
+      } 
+
+      .dashboard-book-table-content tbody tr {
+        background-color: #ffffff; 
+        color: #000000; 
+        font-size: 16px;  
+        text-align: center; 
+      }
+
+      .dashboard-card{
+        border-radius: 10px;
+      }
+      .sales-report-add-button {
+        background-color: #FFF100;
+        color: #000;
+        font-weight: bold;
+        border: none;
+        padding: 18px 20px;
+        border-radius: 8px;
+        font-size: 16px;
+        margin-top: 150px;
+      }
+}

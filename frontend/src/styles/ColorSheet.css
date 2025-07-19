@@ -1,0 +1,37 @@
+:root {
+    --background-color: #25272D;
+    --background-color2: rgb(246, 249, 252);
+    --background-head-title: linear-gradient(to right, #FF8181, #FFF100);
+    --background-head-title2: linear-gradient(to right, #1cadf5, #ff15e0);
+    --card-color: rgb(255, 255, 255);
+    --title-color-1: #FFF100;
+    --title-color-2: #0094DE;
+    --title-color-3: #000000;
+    --title-color-4: #ffffff;
+    --title-color-5: #25272D;
+    --price-color: #FF3C00;
+    --border-color-1: #D9D9D9;
+    --border-color-2: #B1B1B1;
+    --border-color-3: #1cb2fd;
+    --text-input-color: rgb(94, 94, 94);
+    --description-color: rgb(78, 78, 78);
+    --btn-color-1: #1cb2fd;
+    --btn-color-2: #98CE44;
+    --btn-color-3: #EFEFEF;
+    --btn-color-4: #FFF100;
+    --text-btn-color-1: rgb(255, 255, 255);
+    --text-btn-color-2: #000000;
+
+    --yellow: #FFF100;
+    --orange: #FF3C00;
+    --lightorange: #ffa600;
+    --orange-yellow-for-border: linear-gradient(to right, #FF8181, #FFF100) 1;
+    --orange-yellow-for-bg: linear-gradient(to right, #FF8181, #FFF100);
+    --blue: #0094DE;
+    --lightblue: #1cb2fd;
+    --white: rgb(255, 255, 255);
+    --green: #98CE44;
+    --green-for-login-box: #5CB338;
+    --red: #FF4545;
+    --lightyellow: #fcffcf;
+}

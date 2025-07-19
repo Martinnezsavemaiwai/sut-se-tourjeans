@@ -1,0 +1,126 @@
+.tour-packages-container-manage {
+
+  background-color: #ffffff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+  .hd {
+    color: #000;
+  }
+
+  .tour-packages-container {
+    font-family: 'Prompt', sans-serif;
+    background-color: #ffffe8;
+    padding: 24px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .title-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 7%;
+  }
+
+  .tour-packages-title {
+    color: #101010;
+    font-size: 35px;
+    font-weight: 625;
+    margin-top: -25px;
+    margin-left: -60px;
+  }
+
+  .tour-package-management-search-input {
+    width: 320px;
+    border-radius: 15px;
+    margin-top: 150px;
+    position: absolute;
+    left: 10;
+  }
+
+  /*.tour-package-management-search-input:hover {
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+  }*/
+
+  .tour-package-management-add-button {
+    background-color: #FFF100;
+    color: #000;
+    font-weight: bold;
+    border: none;
+    padding: 18px 20px;
+    border-radius: 8px;
+    font-size: 16px;
+    margin-top: 150px;
+  }
+
+  .tour-package-management-add-button:hover {
+    background-color: #FFF100;
+  }
+
+  .tour-packages-table .ant-table {
+    overflow: hidden;
+    background-color: #ffffd2;
+    margin-top: 5px;
+    padding: 6.5% 3.5% 3% 3.5%;
+    margin: -65px 50px 1px 50px;
+    border-radius: 35px;
+  }
+
+  .title-container {
+    position: relative;
+    z-index: 1;
+  }
+
+  .tour-packages-table .ant-table-thead>tr>th,
+  .tour-packages-table .ant-table-tbody>tr>td {
+    border-bottom: 5px solid #ffffd2;
+  }
+
+  .tour-packages-table .ant-table-thead>tr>th {
+    background-color: #000;
+    color: #ffffff;
+    ;
+    text-align: center;
+    font-weight: bold;
+    font-size: 16px;
+  }
+
+  .tour-packages-table .ant-table-tbody>tr>td {
+    text-align: center;
+    color: #000000;
+    font-size: 14px;
+    padding: 20px;
+  }
+
+  .tour-packages-table .ant-table-tbody>tr:nth-child(odd) {
+    background-color: #ffffff;
+  }
+
+  .tour-packages-table .ant-table-tbody>tr:nth-child(even) {
+    background-color: #ffffff;
+  }
+
+  .status {
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+    text-align: center;
+    display: inline-block;
+  }
+
+  .status.available {
+    color: green;
+    background-color: #e0ffe0;
+    border-radius: 10px;
+    padding: 5px 10px;
+  }
+
+  .status.full {
+    color: red;
+    background-color: #ffe8e8;
+    border-radius: 10px;
+    padding: 5px 10px;
+  }
+}

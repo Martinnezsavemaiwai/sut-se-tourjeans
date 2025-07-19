@@ -1,0 +1,54 @@
+@import "../../styles/ColorSheet.css";
+
+.footer-container{
+    width: 100%;
+    height: 200px;
+    background-color: #222222;
+    padding: 30px 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 14px;
+
+    & .logo-box{
+        font-size: 1.5rem;
+        font-weight: 600;
+        color: var(--yellow);
+        margin-bottom: 8px;
+    }
+
+    & .time-open{
+        color: var(--white);
+    }
+
+    & .contact-box{
+        display: flex;
+        flex-wrap: wrap;
+        width: 400px;
+        margin-top: 15px;
+
+        & .contact{
+            width: 50%;
+            display: flex;
+            align-items: center;
+            color: var(--white);
+            margin-bottom: 10px;
+
+            & .img-box{
+                width: 30px;
+                height: 30px;
+                overflow: hidden;
+                border-radius: 50%;
+                background: var(--white);
+                border: 1px solid var(--white);
+                margin-right: 8px;
+
+                & img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+        }
+    }
+}

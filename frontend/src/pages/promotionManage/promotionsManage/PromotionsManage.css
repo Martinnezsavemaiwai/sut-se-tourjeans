@@ -1,0 +1,278 @@
+.tour-promotions-container-manage {
+  background-color: #ffffff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+  .hd {
+    color: #000;
+  }
+
+  .tour-packages-container {
+    font-family: 'Prompt', sans-serif;
+    background-color: #ffffe8;
+    padding: 24px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .title-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 7%;
+  }
+
+  .tour-promotions-title {
+    color: #101010;
+    font-size: 35px;
+    font-weight: 625;
+    margin-top: -25px;
+    margin-left: -60px;
+  }
+
+  .tour-promotions-management-search-input {
+    width: 320px;
+    border-radius: 15px;
+    margin-top: 150px;
+    position: absolute;
+    left: 10;
+  }
+
+  .tour-promotions-management-search-input:hover {
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+  }
+
+  .tour-promotions-management-add-button {
+    background-color: #FFF100;
+    color: #000;
+    font-weight: bold;
+    border: none;
+    padding: 18px 20px;
+    border-radius: 8px;
+    font-size: 16px;
+    margin-top: 150px;
+  }
+
+  .tour-promotions-management-add-button:hover {
+    background-color: #FFF100;
+  }
+
+  .tour-promotions-table .ant-table {
+    overflow: hidden;
+    background-color: #ffffd2;
+    margin-top: 5px;
+    padding: 6.5% 3.5% 3% 3.5%;
+    margin: -65px 50px 1px 50px;
+    border-radius: 35px;
+  }
+
+  .title-container {
+    position: relative;
+    z-index: 1;
+  }
+
+  .tour-promotions-table .ant-table-thead>tr>th,
+  .tour-promotions-table .ant-table-tbody>tr>td {
+    border-bottom: 5px solid #ffffd2;
+  }
+
+  .tour-promotions-table .ant-table-thead>tr>th {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+    font-size: 16px;
+  }
+
+  .tour-promotions-table .ant-table-tbody>tr>td {
+    text-align: center;
+    color: #000000;
+    font-size: 14px;
+    padding: 20px;
+  }
+
+  .tour-promotions-table .ant-table-tbody>tr:nth-child(odd) {
+    background-color: #ffffff;
+  }
+
+  .tour-promotions-table .ant-table-tbody>tr:nth-child(even) {
+    background-color: #ffffff;
+  }
+
+  .statusP {
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+    text-align: center;
+    display: inline-block;
+  }
+
+  .statusP.availableP {
+    color: green;
+    background-color: #e0ffe0;
+    border-radius: 10px;
+    padding: 5px 10px;
+  }
+
+  .statusP.fullP {
+    color: red;
+    background-color: #ffe8e8;
+    border-radius: 10px;
+    padding: 5px 10px;
+  }
+}
+
+
+.promotion-container {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  align-items: center;
+
+  .flex-block {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+  }
+
+  .promotion-status-block {
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: rgb(223, 248, 223);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 200px;
+  }
+
+  .promotion-block {
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: #efefef;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: grid;
+    grid-template-rows: auto auto;
+    font-weight: 200px;
+  }
+
+  .sub-promotion-block {
+    font-weight: 200px;
+    font-size: 1.5rem;
+    margin-left: -12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000000;
+  }
+
+  .sub1-promotion-block {
+    border-radius: 10px;
+    padding: 18px;
+    border-radius: 10px;
+    background-color: #000000;
+    align-items: center;
+    margin-bottom: -10px;
+  }
+
+  .t-time {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFF100;
+    font-size: 1.2rem;
+    margin-bottom: -20px;
+  }
+
+  .t-time1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFF100;
+    font-size: 1.0rem;
+
+  }
+
+  .info-column {
+    width: 75%;
+    background-color: #f9f9f9;
+    margin-bottom: 20px;
+    padding: 10px;
+    padding-left: 20px;
+    border-radius: 10px;
+  }
+
+  .info-column1 {
+    width: 48%;
+    background-color: #f9f9f9;
+    margin-bottom: 20px;
+    padding: 12px;
+    padding-left: 20px;
+    border-radius: 10px;
+  }
+
+  .info-label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+  }
+
+  .value {
+    color: #5a5a5a;
+    display: block;
+    font-size: 16px;
+  }
+
+  .remaining-time-label {
+    font-weight: bold;
+  }
+
+  .remaining-time-value {
+    font-size: 16px;
+    color: #ff5722;
+    font-weight: bold;
+  }
+
+  .closed {
+    color: red;
+    font-weight: bold;
+  }
+
+  .open {
+    color: green;
+    font-weight: bold;
+  }
+
+  .modal .ant-modal-header {
+    background-color: #f5f5f5;
+    border-bottom: 2px solid #ddd;
+    padding: 20px;
+  }
+
+  .modal .ant-modal-footer {
+    padding: 10px 20px;
+  }
+
+  .modal .ant-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+  }
+
+  .modal .ant-btn:hover {
+    background-color: #0056b3;
+  }
+
+  .promotion-status-block.open {
+    background-color: #dff8df;
+    color: green;
+  }
+
+  .promotion-status-block.closed {
+    background-color: #ffebeb;
+    color: red;
+  }
+}

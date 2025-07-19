@@ -1,0 +1,191 @@
+.promotions-page {
+  padding-bottom: 60px;
+  padding-top: 1px;
+  font-family: "Arial", sans-serif;
+  background-color: #f8f9ec;
+
+  .center {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 15px;
+  }
+
+  .banner {
+    background-size: cover;
+    background-position: center;
+    color: rgb(0, 0, 0.5);
+    text-align: center;
+    border-radius: 15px;
+    margin-bottom: 20px;
+  }
+
+  .banner img {
+    width: 1000%;
+    height: auto;
+    opacity: 0.9;
+    margin-top: 1px;
+    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 80%, rgba(0, 0, 0, 0) 100%);
+    -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 80%, rgba(0, 0, 0, 0) 100%);
+  }
+
+  .banner h1 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-top: -10px;
+    color: #000000;
+  }
+
+  .banner p {
+    font-size: 18px;
+    color: #f89a20;
+    font-weight: bold;
+  }
+
+  .search-bar {
+    display: flex;
+    justify-content: center;
+    padding: 2px;
+    margin-bottom: 45px;
+  }
+
+  .search-input {
+    width: 300px;
+    border-radius: 20px;
+  }
+
+  .search-input:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+  }
+
+  .promotion-cards {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 80px;
+    padding-inline: 100px;
+  }
+
+  .icon-box {
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    width: 80px;
+    border-radius: 10%;
+  }
+
+  .promotion-card {
+    background-color: #000000;
+    border: 1px solid #000000;
+    border-radius: 25px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(94, 94, 94, 0.8);
+    transition: transform 0.3s ease;
+  }
+
+  .promotion-card:hover {
+    transform: translateY(-10px);
+  }
+
+  .promotion-header {
+    display: grid;
+    margin-bottom: 25px;
+    align-items: center;
+  }
+
+  .tag-icon {
+    font-size: 60px;
+    color: #000000;
+    margin-right: 5px;
+    margin-top: 45px;
+  }
+
+  .percen {
+    margin-top: 25px;
+    margin-left: 8px;
+  }
+
+  .discount {
+    width: 120px;
+    height: 190px;
+    background-color: #ffffff;
+    color: #0094DE;
+    padding: 5px 10px;
+    border-radius: 20px 0 0 20px;
+    font-weight: bold;
+    margin-top: -21px;
+  }
+
+  .type {
+    background: linear-gradient(90deg, #FF8181, #FFF100);
+    color: white;
+    font-weight: bold;
+    padding: 5px 5px;
+    border-radius: 0 20px 0 0;
+    margin-top: -325px;
+    margin-left: 120px;
+    width: 71.7%;
+    height: 55px;
+    font-size: 15px;
+    text-overflow: ellipsis;
+    display: block;
+  }
+
+  .promotion-details p {
+    margin: 5px 0;
+    font-size: 13px;
+    color: #FFF100;
+    margin-left: 140px;
+    margin-top: -145px;
+  }
+
+  .promotion-details1 p {
+    margin: 5px 0;
+    font-size: 10.5px;
+    color: #ffffff;
+    margin-left: 140px;
+    margin-top: -2.5px;
+    margin-bottom: 14px;
+  }
+
+  .promotion-details2 p {
+    margin: 5px 0;
+    font-size: 11px;
+    color: #FF8181;
+    margin-left: 140px;
+    margin-top: -2px;
+    margin-bottom: 6px;
+  }
+
+  .code {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ffffff;
+    padding: 3px;
+    border-radius: 4px;
+    font-size: 14px;
+    margin-left: 140px;
+  }
+
+  .copy-icon {
+    cursor: pointer;
+    color: #888;
+  }
+
+  .copy-icon:hover {
+    color: rgb(0, 0, 0);
+  }
+
+  .gradient-icon {
+    margin-right: 10px;
+    color: #ffc881;
+  }
+
+  .gradient-icon:hover {
+    transform: translateX(10px);
+    opacity: 0.8;
+  }
+}

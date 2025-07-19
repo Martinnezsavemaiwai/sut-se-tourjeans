@@ -1,0 +1,154 @@
+.profileEmployee-page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.profileEmployee-container {
+  display: flex;
+  flex: 1;
+  background-color: #f8f9fa;
+}
+
+.profileEmployee-sidebar {
+  width: 300px;
+  background-color: #ffffff;
+  border-right: 1px solid #dcdcdc;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.profileEmployee-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center the content horizontally */
+  justify-content: center; /* Center the content vertically */
+  text-align: center; /* Align text inside the container */
+}
+
+.profileEmployee-picture {
+  width: 150px; /* Set a fixed width for the profile image */
+  height: 150px; /* Set a fixed height for the profile image */
+  border-radius: 50%; /* Make the image round */
+  object-fit: cover; /* Ensure the image covers the space */
+  margin-bottom: 10px; /* Add some space below the image */
+}
+
+
+.profileEmployee-info h2 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.profileEmployee-info p {
+  margin: 5px 0;
+  color: #555;
+}
+
+.profileEmployee-buttons {
+  margin: 20px 0;
+  width: 100%;
+}
+
+.menu-btn {
+  width: 100%;
+  padding: 10px 15px;
+  margin-bottom: 10px;
+  font-size: 16px;
+  background-color: #f2f2f2;
+  border: none;
+  border-radius: 5px;
+  text-align: left;
+  cursor: pointer;
+}
+
+.menu-btn.active {
+  background-color: #ffcc00;
+  color: #000;
+}
+
+.menu-btn:hover {
+  background-color: #e6e6e6;
+}
+
+.logout-btn {
+  margin-top: auto;
+  width: 100%;
+  background-color: #ffffff; /* พื้นหลังสีขาว */
+  color: #000000; /* ตัวอักษรสีดำ */
+  border: 1px solid #ccc; /* (เพิ่มเติม) เส้นขอบสีเทาอ่อน */
+  padding: 10px; /* (เพิ่มเติม) ระยะห่างด้านในของปุ่ม */
+  text-align: center; /* (เพิ่มเติม) จัดตัวอักษรให้อยู่กลาง */
+  font-size: 16px; /* (เพิ่มเติม) ขนาดตัวอักษร */
+  cursor: pointer; /* (เพิ่มเติม) เปลี่ยนเคอร์เซอร์เมื่อวางบนปุ่ม */
+}
+
+.profileEmployee-content {
+  flex: 1;
+  padding: 30px;
+  overflow: scroll;
+}
+
+.profileEmployee-content h1 {
+  font-size: 24px;
+  color: #333;
+}
+
+.edit-profileEmployee-form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+
+
+.employee-schedule-table {
+  width: 100%;
+  border-collapse: collapse; /* เชื่อมเซลล์เข้าด้วยกัน */
+  border-spacing: 0;
+  padding: 10px;
+
+  & thead {
+    background: black;
+    color: var(--title-color-4);
+
+    & th {
+      height: 60px;
+      padding: 10px;
+      text-align: center; /* จัดตำแหน่งข้อความให้อยู่ตรงกลาง */
+      color: white;
+    }
+  }
+
+  & tbody {
+    & tr {
+      background: white;
+      box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* เงาบางๆ ให้แถว */
+      border-radius: 10px;
+
+      & td {
+        height: 50px;
+        text-align: center;
+        padding: 10px; /* เพิ่มพื้นที่ภายในเซลล์ */
+        border: 1px solid #ddd; /* เส้นขอบเบาๆ */
+      }
+
+      & .status {
+        font-weight: 500;
+      }
+    }
+  }
+}
+
+
+.custom-modal .ant-modal-content {
+  width: 800vw !important;
+  max-width: 1000vw;
+  top: 10px;
+}
+.custom-modal .ant-modal-body {
+  max-height: 1000vh;
+  overflow-y: auto;
+}

@@ -1,0 +1,602 @@
+{
+  "id": "f2f00751-2aaf-46e4-9eb4-4ded7178d466",
+  "version": "2.0",
+  "name": "CreateAccommodations",
+  "url": "http://localhost:5173",
+  "tests": [{
+    "id": "c45c4e0e-4906-42db-b78b-a017f5af43c4",
+    "name": "Error",
+    "commands": [{
+      "id": "9ddfa775-71f5-407d-b1cd-f2701ab5ff81",
+      "comment": "",
+      "command": "open",
+      "target": "/Create/Accommodation",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b9af1784-152d-45be-b2a7-0ff527213d3c",
+      "comment": "",
+      "command": "click",
+      "target": "id=react-select-3-option-3",
+      "targets": [
+        ["id=react-select-3-option-3", "id"],
+        ["css=#react-select-3-option-3", "css:finder"],
+        ["xpath=//div[@id='react-select-3-option-3']", "xpath:attributes"],
+        ["xpath=//div[@id='react-select-3-listbox']/div[4]", "xpath:idRelative"],
+        ["xpath=//div[4]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6e7d076b-56a3-4988-8865-02f665124c81",
+      "comment": "",
+      "command": "click",
+      "target": "css=.react-select__control--is-focused .react-select__input-container",
+      "targets": [
+        ["css=.react-select__control--is-focused .react-select__input-container", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[2]/form/div/div[2]/div/div/div/div[2]", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2c7830df-55ae-4cda-9795-815a5cfb2714",
+      "comment": "",
+      "command": "click",
+      "target": "id=react-select-7-option-2",
+      "targets": [
+        ["id=react-select-7-option-2", "id"],
+        ["css=#react-select-7-option-2", "css:finder"],
+        ["xpath=//div[@id='react-select-7-option-2']", "xpath:attributes"],
+        ["xpath=//div[@id='react-select-7-listbox']/div[3]", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "17883839-a1d5-4d40-8530-51faaae5173e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.react-datepicker-ignore-onclickoutside",
+      "targets": [
+        ["css=.react-datepicker-ignore-onclickoutside", "css:finder"],
+        ["xpath=(//input[@value=''])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div[2]/form/div/div/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "daa104ff-e357-419f-bc7a-90e0db256153",
+      "comment": "",
+      "command": "click",
+      "target": "css=.react-datepicker__time-list-item:nth-child(71)",
+      "targets": [
+        ["css=.react-datepicker__time-list-item:nth-child(71)", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[2]/form/div/div/div[3]/div[2]/div/div/div[2]/div[2]/div/ul/li[71]", "xpath:idRelative"],
+        ["xpath=//li[71]", "xpath:position"],
+        ["xpath=//li[contains(.,'17:30')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1ed2a080-2960-4cc0-9c62-4d59ab92847c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.react-datepicker-ignore-onclickoutside",
+      "targets": [
+        ["css=.react-datepicker-ignore-onclickoutside", "css:finder"],
+        ["xpath=(//input[@value=''])[4]", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div[2]/form/div/div[2]/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9ec8c3a7-a053-4297-99a8-2f21ac4f65f6",
+      "comment": "",
+      "command": "click",
+      "target": "css=.react-datepicker__day--026",
+      "targets": [
+        ["css=.react-datepicker__day--026", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[2]/form/div/div[2]/div[3]/div[2]/div/div/div/div[2]/div[5]/div", "xpath:idRelative"],
+        ["xpath=//div[5]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ee856e89-69ff-4f2d-bed6-9405576cf609",
+      "comment": "",
+      "command": "click",
+      "target": "css=.react-select__control--is-focused .react-select__input-container",
+      "targets": [
+        ["css=.react-select__control--is-focused .react-select__input-container", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[2]/form/div/div/div[3]/div/div/div[2]", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2255721e-7484-43d4-b606-75ba62294e6e",
+      "comment": "",
+      "command": "click",
+      "target": "id=react-select-5-option-0",
+      "targets": [
+        ["id=react-select-5-option-0", "id"],
+        ["css=#react-select-5-option-0", "css:finder"],
+        ["xpath=//div[@id='react-select-5-option-0']", "xpath:attributes"],
+        ["xpath=//div[@id='react-select-5-listbox']/div", "xpath:idRelative"],
+        ["xpath=//div[3]/div[2]/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "72b0b0d3-b678-4e73-9307-0bf2951b6f10",
+      "comment": "",
+      "command": "click",
+      "target": "css=.location-input",
+      "targets": [
+        ["css=.location-input", "css:finder"],
+        ["xpath=(//input[@value=''])[4]", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div[2]/form/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//form/div/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "32605128-4b16-493a-ae93-6a61b56b5cf1",
+      "comment": "",
+      "command": "type",
+      "target": "css=.location-input",
+      "targets": [
+        ["css=.location-input", "css:finder"],
+        ["xpath=//input[@value='ไก่']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div[2]/form/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//form/div/div[2]/input", "xpath:position"]
+      ],
+      "value": "ไก่"
+    }, {
+      "id": "6b7dc01f-8a98-4665-b568-8fcfea53399f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.px-5",
+      "targets": [
+        ["css=.px-5", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[2]/form/div/div/div[4]/label", "xpath:idRelative"],
+        ["xpath=//div[4]/label", "xpath:position"],
+        ["xpath=//label[contains(.,'กรุณาเลือกรูปอาหาร')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "049ad49d-d908-44e5-92b5-e6c7c5cd8ad9",
+      "comment": "",
+      "command": "type",
+      "target": "id=food-file-upload",
+      "targets": [
+        ["id=food-file-upload", "id"],
+        ["css=#food-file-upload", "css:finder"],
+        ["xpath=//input[@id='food-file-upload']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div[2]/form/div/div/div[4]/input", "xpath:idRelative"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": "C:\\Users\\Wellc\\Downloads\\mealImages\\ไก่จ๋า.jpeg"
+    }, {
+      "id": "e2322a15-067a-46be-9647-63094979cc3c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-submit",
+      "targets": [
+        ["css=.btn-submit", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div[2]/form/div[2]/button[3]", "xpath:idRelative"],
+        ["xpath=//button[3]", "xpath:position"],
+        ["xpath=//button[contains(.,'บันทึก')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "47bb5d84-552f-4734-97b7-ea3ac3122e8a",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.ant-message-custom-content > span:nth-child(2)",
+      "targets": [],
+      "value": "กรุณากรอกข้อมูลให้ครบถ้วน"
+    }]
+  }, {
+    "id": "abbac2c2-2969-4f51-ac1e-79a1c5e80581",
+    "name": "Success",
+    "commands": [{
+      "id": "bc3ed659-1107-473b-b8b2-b3c62d85f1bf",
+      "comment": "",
+      "command": "open",
+      "target": "/Create/Accommodation",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f3cb9478-3c26-43ac-afc3-d09ffe8bf44e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.flex:nth-child(1) > .group",
+      "targets": [
+        ["css=.flex:nth-child(1) > .group", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[2]/div[2]/div/div/div/div[2]/div/button", "xpath:idRelative"],
+        ["xpath=//div[2]/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'เพิ่มที่พักและอาหาร')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0216e1a9-9145-4dc9-b606-799f20f51021",
+      "comment": "",
+      "command": "click",
+      "target": "css=.react-select__control--is-focused .react-select__input-container",
+      "targets": [
+        ["css=.react-select__control--is-focused .react-select__input-container", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[2]/form/div/div/div/div/div/div[2]", "xpath:idRelative"],
+        ["xpath=//div/div/div/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a0f38870-5b28-4aa7-8a19-29d44f6c1a81",
+      "comment": "",
+      "command": "click",
+      "target": "id=react-select-3-option-3",
+      "targets": [
+        ["id=react-select-3-option-3", "id"],
+        ["css=#react-select-3-option-3", "css:finder"],
+        ["xpath=//div[@id='react-select-3-option-3']", "xpath:attributes"],
+        ["xpath=//div[@id='react-select-3-listbox']/div[4]", "xpath:idRelative"],
+        ["xpath=//div[4]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "05a1c757-cc22-4986-90c5-bd87b7ad1b6e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.react-select__control--is-focused .react-select__input-container",
+      "targets": [
+        ["css=.react-select__control--is-focused .react-select__input-container", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[2]/form/div/div[2]/div/div/div/div[2]", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c7e0e891-afef-4ba4-a79c-400e8d13df0f",
+      "comment": "",
+      "command": "click",
+      "target": "id=react-select-7-option-2",
+      "targets": [
+        ["id=react-select-7-option-2", "id"],
+        ["css=#react-select-7-option-2", "css:finder"],
+        ["xpath=//div[@id='react-select-7-option-2']", "xpath:attributes"],
+        ["xpath=//div[@id='react-select-7-listbox']/div[3]", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3a00d59e-fad1-4dac-b4bb-02b6437ea9e8",
+      "comment": "",
+      "command": "click",
+      "target": "css=.react-datepicker-ignore-onclickoutside",
+      "targets": [
+        ["css=.react-datepicker-ignore-onclickoutside", "css:finder"],
+        ["xpath=(//input[@value=''])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div[2]/form/div/div/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "eb17ef3f-1493-476c-a2e2-8937f13bd556",
+      "comment": "",
+      "command": "click",
+      "target": "css=.react-datepicker__time-list-item:nth-child(68)",
+      "targets": [
+        ["css=.react-datepicker__time-list-item:nth-child(68)", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[2]/form/div/div/div[3]/div[2]/div/div/div[2]/div[2]/div/ul/li[68]", "xpath:idRelative"],
+        ["xpath=//li[68]", "xpath:position"],
+        ["xpath=//li[contains(.,'16:45')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "069e457c-301c-4106-b4b4-86ce5ead8cb6",
+      "comment": "",
+      "command": "click",
+      "target": "css=.react-datepicker-ignore-onclickoutside",
+      "targets": [
+        ["css=.react-datepicker-ignore-onclickoutside", "css:finder"],
+        ["xpath=(//input[@value=''])[4]", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div[2]/form/div/div[2]/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "80f9f163-5f2b-42e8-ac8e-d63093a3f740",
+      "comment": "",
+      "command": "click",
+      "target": "css=.react-datepicker__day--026",
+      "targets": [
+        ["css=.react-datepicker__day--026", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[2]/form/div/div[2]/div[3]/div[2]/div/div/div/div[2]/div[5]/div", "xpath:idRelative"],
+        ["xpath=//div[5]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2db488a9-ed02-4773-95d3-72ebb553b47d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.react-select__control--is-focused .react-select__input-container",
+      "targets": [
+        ["css=.react-select__control--is-focused .react-select__input-container", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[2]/form/div/div/div[3]/div/div/div[2]", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "401477a6-ab9e-4791-9372-cf7b4af71cc0",
+      "comment": "",
+      "command": "click",
+      "target": "id=react-select-5-option-0",
+      "targets": [
+        ["id=react-select-5-option-0", "id"],
+        ["css=#react-select-5-option-0", "css:finder"],
+        ["xpath=//div[@id='react-select-5-option-0']", "xpath:attributes"],
+        ["xpath=//div[@id='react-select-5-listbox']/div", "xpath:idRelative"],
+        ["xpath=//div[3]/div[2]/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d39cf0b4-b17c-4f2b-a562-9fb66230f295",
+      "comment": "",
+      "command": "click",
+      "target": "css=.location-input",
+      "targets": [
+        ["css=.location-input", "css:finder"],
+        ["xpath=(//input[@value=''])[4]", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div[2]/form/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//form/div/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "78089eef-f886-438d-b714-3253ad201142",
+      "comment": "",
+      "command": "type",
+      "target": "css=.location-input",
+      "targets": [
+        ["css=.location-input", "css:finder"],
+        ["xpath=//input[@value='ไก่']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div[2]/form/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//form/div/div[2]/input", "xpath:position"]
+      ],
+      "value": "ไก่"
+    }, {
+      "id": "880ff649-d48c-4916-b68b-80b6211dcebb",
+      "comment": "",
+      "command": "click",
+      "target": "css=.px-5",
+      "targets": [
+        ["css=.px-5", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[2]/form/div/div/div[4]/label", "xpath:idRelative"],
+        ["xpath=//div[4]/label", "xpath:position"],
+        ["xpath=//label[contains(.,'กรุณาเลือกรูปอาหาร')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "110630dc-4f4a-4c76-9207-d11b4fab601f",
+      "comment": "",
+      "command": "type",
+      "target": "id=food-file-upload",
+      "targets": [
+        ["id=food-file-upload", "id"],
+        ["css=#food-file-upload", "css:finder"],
+        ["xpath=//input[@id='food-file-upload']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div[2]/form/div/div/div[4]/input", "xpath:idRelative"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": "C:\\Users\\Wellc\\Downloads\\ไก่จ๋า.jpeg"
+    }, {
+      "id": "635b4724-cd2a-4d70-8945-b04c72f5eaf0",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-submit",
+      "targets": [
+        ["css=.btn-submit", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div[2]/form/div[2]/button[3]", "xpath:idRelative"],
+        ["xpath=//button[3]", "xpath:position"],
+        ["xpath=//button[contains(.,'บันทึก')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f9d2e7e4-414d-41b7-b70a-6969afb580dd",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,107.33333587646484)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e1cc7b0e-180b-4e65-bc5d-5d74f9bf81b7",
+      "comment": "",
+      "command": "click",
+      "target": "css=.css-19bb58m",
+      "targets": [
+        ["css=.css-19bb58m", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[2]/form/div/div/div[3]/div/div/div[2]", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "cb2ec3c9-d689-4e0f-b948-a99af9c6cf48",
+      "comment": "",
+      "command": "click",
+      "target": "id=react-select-5-option-0",
+      "targets": [
+        ["id=react-select-5-option-0", "id"],
+        ["css=#react-select-5-option-0", "css:finder"],
+        ["xpath=//div[@id='react-select-5-option-0']", "xpath:attributes"],
+        ["xpath=//div[@id='react-select-5-listbox']/div", "xpath:idRelative"],
+        ["xpath=//div[3]/div[2]/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "628cece1-1e0d-4d87-a429-e794a1e24a0b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.location-input",
+      "targets": [
+        ["css=.location-input", "css:finder"],
+        ["xpath=(//input[@value=''])[4]", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div[2]/form/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//form/div/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "50d27dfb-cf2e-4bd9-b163-6dc1ea311f83",
+      "comment": "",
+      "command": "type",
+      "target": "css=.location-input",
+      "targets": [
+        ["css=.location-input", "css:finder"],
+        ["xpath=//input[@value='ไก่เยอรมัน']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div[2]/form/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//form/div/div[2]/input", "xpath:position"]
+      ],
+      "value": "ไก่เยอรมัน"
+    }, {
+      "id": "272fc0b1-13e4-41e9-9f56-96f534071269",
+      "comment": "",
+      "command": "click",
+      "target": "css=.px-5",
+      "targets": [
+        ["css=.px-5", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[2]/form/div/div/div[4]/label", "xpath:idRelative"],
+        ["xpath=//div[4]/label", "xpath:position"],
+        ["xpath=//label[contains(.,'กรุณาเลือกรูปอาหาร')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "bac866ac-d7bc-4a79-b851-a68cc76e0c88",
+      "comment": "",
+      "command": "type",
+      "target": "id=food-file-upload",
+      "targets": [
+        ["id=food-file-upload", "id"],
+        ["css=#food-file-upload", "css:finder"],
+        ["xpath=//input[@id='food-file-upload']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div[2]/form/div/div/div[4]/input", "xpath:idRelative"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": "C:\\Users\\Wellc\\Downloads\\ไก่ทอดเยอรมัน.jpg"
+    }, {
+      "id": "aada5e1a-2f68-4e03-8238-eb6cdb8f9b59",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-submit",
+      "targets": [
+        ["css=.btn-submit", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div[2]/form/div[2]/button[3]", "xpath:idRelative"],
+        ["xpath=//button[3]", "xpath:position"],
+        ["xpath=//button[contains(.,'บันทึก')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "01a78f22-63d4-474d-bb48-6e24f4b6c9fd",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,107.33333587646484)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "bcf0cd59-2043-4c59-8a59-c3dbe4bb335d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.location-input",
+      "targets": [
+        ["css=.location-input", "css:finder"],
+        ["xpath=(//input[@value=''])[4]", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div[2]/form/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//form/div/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "59581d2e-ce3b-49d1-9b85-20bb60d8f8d3",
+      "comment": "",
+      "command": "type",
+      "target": "css=.location-input",
+      "targets": [
+        ["css=.location-input", "css:finder"],
+        ["xpath=//input[@value='เป็ด']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div[2]/form/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//form/div/div[2]/input", "xpath:position"]
+      ],
+      "value": "เป็ด"
+    }, {
+      "id": "546ee258-769d-4f21-9834-b414117697d4",
+      "comment": "",
+      "command": "click",
+      "target": "css=.css-19bb58m",
+      "targets": [
+        ["css=.css-19bb58m", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[2]/form/div/div/div[3]/div/div/div[2]", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6c332788-9394-42fa-8116-04a499d3887e",
+      "comment": "",
+      "command": "click",
+      "target": "id=react-select-5-option-0",
+      "targets": [
+        ["id=react-select-5-option-0", "id"],
+        ["css=#react-select-5-option-0", "css:finder"],
+        ["xpath=//div[@id='react-select-5-option-0']", "xpath:attributes"],
+        ["xpath=//div[@id='react-select-5-listbox']/div", "xpath:idRelative"],
+        ["xpath=//div[3]/div[2]/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4f60da16-8535-442b-9adf-d0692cc3da1f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.px-5",
+      "targets": [
+        ["css=.px-5", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[2]/form/div/div/div[4]/label", "xpath:idRelative"],
+        ["xpath=//div[4]/label", "xpath:position"],
+        ["xpath=//label[contains(.,'กรุณาเลือกรูปอาหาร')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7739d538-91f2-4e85-b67a-ada258492ebf",
+      "comment": "",
+      "command": "type",
+      "target": "id=food-file-upload",
+      "targets": [
+        ["id=food-file-upload", "id"],
+        ["css=#food-file-upload", "css:finder"],
+        ["xpath=//input[@id='food-file-upload']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div[2]/form/div/div/div[4]/input", "xpath:idRelative"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": "C:\\Users\\Wellc\\Downloads\\เป็ดย่างเกลือ.png"
+    }, {
+      "id": "54242d68-bbb6-46d8-ae14-501396db2c90",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-submit",
+      "targets": [
+        ["css=.btn-submit", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div[2]/form/div[2]/button[3]", "xpath:idRelative"],
+        ["xpath=//button[3]", "xpath:position"],
+        ["xpath=//button[contains(.,'บันทึก')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8fd79003-a9c3-4b5d-94e9-8df3e0fe71a3",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.ant-message-custom-content > span:nth-child(2)",
+      "targets": [],
+      "value": "สร้างข้อมูลสำเร็จทั้งหมด!"
+    }]
+  }],
+  "suites": [{
+    "id": "75542275-fcd7-4df7-8643-173c4b73fbc6",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["c45c4e0e-4906-42db-b78b-a017f5af43c4"]
+  }],
+  "urls": ["http://localhost:5173/"],
+  "plugins": []
+}

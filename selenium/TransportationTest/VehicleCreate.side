@@ -1,0 +1,228 @@
+{
+  "id": "2c025814-7af3-4c8e-9772-5c6abc53e913",
+  "version": "2.0",
+  "name": "Tour",
+  "url": "http://localhost:5173/Create/TransportManagement",
+  "tests": [{
+    "id": "3de782b3-aee7-4442-857f-22fe6f9e1b7f",
+    "name": "success",
+    "commands": [{
+      "id": "2d616a7e-53f0-4c71-bad9-feac6ed06a2b",
+      "comment": "",
+      "command": "open",
+      "target": "/Create/TransportManagement",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "68aa7da6-d723-41f4-ab50-02278b1436e8",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1722x928",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6e58b7a3-45d4-4937-9bd7-f9988ebc6d85",
+      "comment": "",
+      "command": "type",
+      "target": "id=file-upload",
+      "targets": [
+        ["id=file-upload", "id"],
+        ["css=#file-upload", "css:finder"],
+        ["xpath=//input[@id='file-upload']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/form/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "C:\\Users\\Wellc\\Downloads\\Chill_guy__Concept_e.jpeg"
+    }, {
+      "id": "bd100d95-e9dd-4478-b8a6-79ee7bedc29b",
+      "comment": "",
+      "command": "type",
+      "target": "css=.px-5:nth-child(1)",
+      "targets": [
+        ["css=.px-5:nth-child(1)", "css:finder"],
+        ["xpath=//input[@value='Chill']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/form/div/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "Chill"
+    }, {
+      "id": "18855517-fa66-436a-a8aa-b2b48cf930a0",
+      "comment": "",
+      "command": "click",
+      "target": "name=vehicle",
+      "targets": [
+        ["name=vehicle", "name"],
+        ["css=.p-3", "css:finder"],
+        ["xpath=//select[@name='vehicle']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/form/div/div[2]/div[2]/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "596ccf87-ea48-4605-8625-cdd303079024",
+      "comment": "",
+      "command": "select",
+      "target": "name=vehicle",
+      "targets": [],
+      "value": "label=บัส"
+    }, {
+      "id": "2605913d-29db-44c2-a949-ef54c8a05373",
+      "comment": "",
+      "command": "click",
+      "target": "css=.text-white",
+      "targets": [
+        ["css=.text-white", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/form/div[2]/button[3]", "xpath:idRelative"],
+        ["xpath=//button[3]", "xpath:position"],
+        ["xpath=//button[contains(.,'บันทึก')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "bf5c48ec-cfb6-40f0-b8b2-400033ec1593",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-submit",
+      "targets": [
+        ["css=.btn-submit", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/form/div[2]/button[3]", "xpath:idRelative"],
+        ["xpath=//button[3]", "xpath:position"],
+        ["xpath=//button[contains(.,'บันทึก')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c1d680ff-b146-4b6b-a5d9-bec783ea15be",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.ant-message-custom-content > span:nth-child(2)",
+      "targets": [
+        ["css=.grid", "css:finder"],
+        ["xpath=//div[@id='root']/div/form/div", "xpath:idRelative"],
+        ["xpath=//form/div", "xpath:position"]
+      ],
+      "value": "สร้างการขนส่งสำเร็จ"
+    }]
+  }, {
+    "id": "85bf3fc3-4223-4f6a-a9cc-620d85028c64",
+    "name": "fail",
+    "commands": [{
+      "id": "8b075d90-5767-4c55-ae22-caa919714405",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:5173/Create/TransportManagement",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d2b8d9ee-fe56-43bd-b5da-a6e95b701dbc",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1722x928",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "cd60c4b6-b204-4181-a115-8552b9c8494b",
+      "comment": "",
+      "command": "type",
+      "target": "id=file-upload",
+      "targets": [
+        ["id=file-upload", "id"],
+        ["css=#file-upload", "css:finder"],
+        ["xpath=//input[@id='file-upload']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/form/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "C:\\Users\\Wellc\\Downloads\\TransportationEdit.png"
+    }, {
+      "id": "b96dfa1d-d916-47bf-837c-df66edd0e263",
+      "comment": "",
+      "command": "click",
+      "target": "css=.w-6:nth-child(1)",
+      "targets": [
+        ["css=.w-6:nth-child(1)", "css:finder"],
+        ["xpath=//img[@alt='remove']", "xpath:img"],
+        ["xpath=//div[@id='root']/div/form/div/div/div[2]/div/button/img", "xpath:idRelative"],
+        ["xpath=//button/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4acb8e57-38a6-49b4-9a48-5d8ef98e1b58",
+      "comment": "",
+      "command": "click",
+      "target": "css=.px-5:nth-child(1)",
+      "targets": [
+        ["css=.px-5:nth-child(1)", "css:finder"],
+        ["xpath=//input[@value='']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/form/div/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2e21f088-8990-4b32-bb52-d936fc354370",
+      "comment": "",
+      "command": "type",
+      "target": "css=.px-5:nth-child(1)",
+      "targets": [
+        ["css=.px-5:nth-child(1)", "css:finder"],
+        ["xpath=//input[@value='เหะ']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/form/div/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "เหะ"
+    }, {
+      "id": "1e5e6b14-051a-4835-b5a1-e61e56df9c50",
+      "comment": "",
+      "command": "click",
+      "target": "name=vehicle",
+      "targets": [
+        ["name=vehicle", "name"],
+        ["css=.p-3", "css:finder"],
+        ["xpath=//select[@name='vehicle']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/form/div/div[2]/div[2]/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b7668473-7d40-4466-a149-c77cd77e2869",
+      "comment": "",
+      "command": "select",
+      "target": "name=vehicle",
+      "targets": [],
+      "value": "label=เรือ"
+    }, {
+      "id": "abfedc3e-0329-4003-a11b-f9c3eb55a1e2",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-submit",
+      "targets": [
+        ["css=.btn-submit", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/form/div[2]/button[3]", "xpath:idRelative"],
+        ["xpath=//button[3]", "xpath:position"],
+        ["xpath=//button[contains(.,'บันทึก')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "297c97ff-880d-4805-9c73-fce1cf52c60c",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.ant-message-custom-content > span:nth-child(2)",
+      "targets": [
+        ["css=.grid", "css:finder"],
+        ["xpath=//div[@id='root']/div/form/div", "xpath:idRelative"],
+        ["xpath=//form/div", "xpath:position"]
+      ],
+      "value": "กรุณากรอกข้อมูลให้คร้บถ้วน"
+    }]
+  }],
+  "suites": [{
+    "id": "d3c7beeb-e9a0-4b26-9b3e-aa9965314492",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["3de782b3-aee7-4442-857f-22fe6f9e1b7f"]
+  }],
+  "urls": ["http://localhost:5173/", "http://localhost:5173/Create/TransportManagement"],
+  "plugins": []
+}

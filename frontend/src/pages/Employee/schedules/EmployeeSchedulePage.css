@@ -1,0 +1,72 @@
+/* Styles for Employee Schedule Page */
+
+.employee-schedule-page {
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgba(255, 255, 255, 0.84);
+    padding: 20px;
+  }
+  
+  .content-container {
+    background-color: var(--lightyellow);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .page-title {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #000;
+    margin-bottom: 20px;
+  }
+  
+  .search-container {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .schedules-table {
+    background: white;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .ant-table-thead > tr > th {
+    background-color: black !important;
+    color: white !important;
+    text-align: center !important;
+    vertical-align: middle !important;
+  }
+  
+  .ant-table-tbody > tr > td {
+    text-align: center;
+    vertical-align: middle;
+  }
+  
+  .table-row-light {
+    background-color: #f9f9f9;
+  }
+  
+  .table-row-dark {
+    background-color: #ffffff;
+  }
+  
+  .pagination-container {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .ant-table-cell {
+    text-align: center;
+  }
+  
+  .ant-table-cell:nth-child(5) {
+    max-width: 150px; /* Adjusted width to fit "Manage EmployeeSchedule" */
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  

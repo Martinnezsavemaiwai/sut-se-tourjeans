@@ -1,0 +1,178 @@
+@import "../../styles/ColorSheet.css";
+
+.show-promotion-container {
+    width: 100%;
+    height: 330px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: var(--background-color2);
+
+    & .card-title {
+        width: 100%;
+        height: 65px;
+        box-shadow: 0 0px 5px rgba(0, 0, 0, 0.2);
+        background-color: rgb(255, 255, 255);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0px 10%;
+
+        & .title {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            font-weight: 700;
+            font-size: 18px;
+
+            & .icon-box {
+                width: 30px;
+                height: 30px;
+
+                & img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+        }
+
+        & .more-promotion-btn {
+            border: 1px solid var(--btn-color-1);
+            width: 145px;
+            height: 35px;
+            border-radius: 5px;
+            color: var(--btn-color-1);
+            transition: all 0.3s ease;
+            font-weight: 600;
+
+        }
+
+        & .more-promotion-btn:hover {
+            background: var(--btn-color-1);
+            color: var(--btn-color-3);
+        }
+    }
+
+    & .promotion-section {
+        width: 75%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        padding: 30px 20px;
+        gap: 22px;
+        overflow: auto;
+        overflow-y: hidden;
+
+        & .promotion-item {
+            position: relative;
+            width: 400px;
+            min-width: 400px;
+            height: 180px;
+            border-radius: 15px;
+            z-index: 0;
+
+            & .promotion-detail-box {
+                position: absolute;
+                z-index: 99;
+                margin-left: 13px;
+                border-radius: 15px;
+                height: 100%;
+                display: flex;
+                overflow: hidden;
+
+                & .percent-box {
+                    width: 30%;
+                    height: 100%;
+                    padding: 10px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-direction: column;
+                    background: var(--card-color);
+
+                    & .img-box {
+                        width: 65px;
+                        height: 65px;
+                        overflow: hidden;
+
+                        & img {
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                        }
+                    }
+
+                    & .percent {
+                        font-weight: 600;
+                        color: var(--title-color-2);
+                        text-align: center;
+                    }
+
+                }
+
+                & .subdetail-box {
+                    height: 100%;
+                    width: 70%;
+                    display: flex;
+                    flex-direction: column;
+
+                    & .promotion-name {
+                        background: var(--background-head-title);
+                        display: flex;
+                        font-weight: 600;
+                        padding: 8px;
+                    }
+
+                    & .detail-wrap {
+                        background-color: rgb(17, 17, 17);
+                        height: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+
+                        & .detail {
+                            color: var(--title-color-4);
+                            padding: 0px 15px;
+
+                        }
+
+                        & .minimum-price {
+                            font-weight: 600;
+                        }
+
+                        & .time {
+                            font-size: 14px;
+                        }
+
+                        & .code-box{
+                            display: flex;
+                            gap: 6px;
+                            
+
+                            & .text{
+                                color: var(--title-color-1);
+                                font-weight: 700;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        & .promotion-item::after {
+            position: absolute;
+            content: "";
+            display: block;
+            width: calc(100% - 1px);
+            height: 100%;
+            background-color: rgb(17, 17, 17);
+            border-radius: 15px;
+            box-shadow: 0 0px 5px rgba(0, 0, 0, 0.2);
+        }
+    }
+
+    & .promotion-section::-webkit-scrollbar {
+        display: none;
+    }
+}

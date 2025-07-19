@@ -1,0 +1,954 @@
+{
+  "id": "9ebfcf33-167d-4408-b833-479f2dc2d590",
+  "version": "2.0",
+  "name": "BookingTourSystem",
+  "url": "http://localhost:5173/tour-package",
+  "tests": [{
+    "id": "be66197d-71ad-4d85-847b-d7bd85eb6508",
+    "name": "Booking_Success",
+    "commands": [{
+      "id": "8062c8e8-2e0f-46d5-b8f5-ba84e1a3ad8e",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:5173/tour-package",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5f021cec-9f52-4aca-882c-6a746995b940",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1536x864",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "fc090acc-df77-49c4-83e3-b32416c643a4",
+      "comment": "",
+      "command": "click",
+      "target": "css=.package-item-container:nth-child(1) .btn-detail",
+      "targets": [
+        ["css=.package-item-container:nth-child(1) .btn-detail", "css:finder"],
+        ["xpath=//div[@id='root']/div/section/div[3]/div/div[2]/div[3]/div[2]/a/div", "xpath:idRelative"],
+        ["xpath=//div[2]/a/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b8c190aa-fd6b-46c0-b7e8-1cfd716e62ac",
+      "comment": "",
+      "command": "click",
+      "target": "css=.booking-btn",
+      "targets": [
+        ["css=.booking-btn", "css:finder"],
+        ["xpath=//div[@id='root']/div/section/div[2]/div[2]/div[2]/div/div[2]", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/div/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9d7e2de2-bb28-4926-95f0-209a3358d55f",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,0)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f54b698f-b0a8-4a05-8248-d986593c1fa8",
+      "comment": "",
+      "command": "type",
+      "target": "id=input-quantity1",
+      "targets": [
+        ["id=input-quantity1", "id"],
+        ["css=#input-quantity1", "css:finder"],
+        ["xpath=//input[@id='input-quantity1']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/div/section/div/div/div/div[2]/div/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "1"
+    }, {
+      "id": "6af42443-b7e6-4e19-a26c-42c643d609c8",
+      "comment": "",
+      "command": "type",
+      "target": "id=input-quantity2",
+      "targets": [],
+      "value": "1"
+    }, {
+      "id": "e73360a2-3f01-4c2e-997e-f372798e7ae2",
+      "comment": "",
+      "command": "type",
+      "target": "id=input-quantity3",
+      "targets": [],
+      "value": "1"
+    }, {
+      "id": "f4348c18-4ae2-4048-ac6b-86ea429a14f1",
+      "comment": "",
+      "command": "type",
+      "target": "id=input-quantity4",
+      "targets": [],
+      "value": "1"
+    }, {
+      "id": "740ff827-80ef-4bae-9732-9ac8eceb74b5",
+      "comment": "",
+      "command": "type",
+      "target": "id=input-quantity5",
+      "targets": [],
+      "value": "1"
+    }, {
+      "id": "7033f81b-f0de-4c9c-9f03-202860792ddc",
+      "comment": "",
+      "command": "click",
+      "target": "css=.confirm-btn",
+      "targets": [
+        ["css=.confirm-btn", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div/section/div[2]/div[2]/div/div[4]/button[2]", "xpath:idRelative"],
+        ["xpath=//button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'ยืนยันการจอง')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "db1eb0bb-6e12-424b-a0e7-5171cc0ca051",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ant-btn-primary",
+      "targets": [
+        ["css=.ant-btn-primary", "css:finder"],
+        ["xpath=(//button[@type='button'])[2]", "xpath:attributes"],
+        ["xpath=//div[2]/button[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7f7edf1c-849c-42a4-aefd-14e13c51f4c6",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.ant-message-custom-content > span:nth-child(2)",
+      "targets": [
+        ["css=.ant-message-custom-content > span:nth-child(2)", "css:finder"],
+        ["xpath=//body/div[2]/div/div/div/div/span[2]", "xpath:position"],
+        ["xpath=//span[contains(.,'สร้างการจองแพ็กเกจทัวร์เรียบร้อยแล้ว')]", "xpath:innerText"]
+      ],
+      "value": "สร้างการจองแพ็กเกจทัวร์เรียบร้อยแล้ว"
+    }]
+  }, {
+    "id": "d805e8d1-035e-4984-b1c0-861c178aee6f",
+    "name": "Booking_Required_TotalQuantity_and_TotalPrice",
+    "commands": [{
+      "id": "42c2320a-5926-49ad-a372-62653a6df400",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:5173/tour-package",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d100578b-94e9-4dc7-b11f-edccab45b438",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1382x784",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3566dca4-14ce-414d-a895-6bf8dcaeaa35",
+      "comment": "",
+      "command": "click",
+      "target": "css=.package-item-container:nth-child(1) .btn-detail",
+      "targets": [
+        ["css=.package-item-container:nth-child(1) .btn-detail", "css:finder"],
+        ["xpath=//div[@id='root']/div/section/div[3]/div/div[2]/div[3]/div[2]/a/div", "xpath:idRelative"],
+        ["xpath=//div[2]/a/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fc5c4483-887d-4b0c-9cf7-46dcfedceaaf",
+      "comment": "",
+      "command": "click",
+      "target": "css=.booking-btn",
+      "targets": [
+        ["css=.booking-btn", "css:finder"],
+        ["xpath=//div[@id='root']/div/section/div[2]/div[2]/div[2]/div/div[2]", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/div/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "33d429da-ac14-4089-99a5-11112202a388",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,0)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "98588035-2e56-4fcc-9598-cf7ca5bd58a5",
+      "comment": "",
+      "command": "click",
+      "target": "css=.confirm-btn",
+      "targets": [
+        ["css=.confirm-btn", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div/section/div[2]/div[2]/div/div[4]/button[2]", "xpath:idRelative"],
+        ["xpath=//button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'ยืนยันการจอง')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "28e9d89c-5ae0-4feb-9ec1-4910f8f0ab7c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ant-message-notice-content",
+      "targets": [
+        ["css=.ant-message-notice-content", "css:finder"],
+        ["xpath=//body/div[2]/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a62acf3e-9119-4753-8c5a-6fc30e3d8752",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.ant-message-custom-content > span:nth-child(2)",
+      "targets": [
+        ["css=.ant-message-custom-content > span:nth-child(2)", "css:finder"],
+        ["xpath=//body/div[2]/div/div/div/div/span[2]", "xpath:position"],
+        ["xpath=//span[contains(.,'กรุณาระบุจำนวนผู้เดินทาง!')]", "xpath:innerText"]
+      ],
+      "value": "กรุณาระบุจำนวนผู้เดินทาง!"
+    }]
+  }, {
+    "id": "b1ec4a0d-da60-4d90-8a82-307f250a39db",
+    "name": "Booking_Required_LastName",
+    "commands": [{
+      "id": "8163c948-d461-49e3-9b72-33778b7bac96",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:5173/tour-package",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "538d83a4-5f5f-4c0a-a860-16d8d025f1fe",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1551x880",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e2f80011-c8b4-49c9-91de-7cfbee5d28f9",
+      "comment": "",
+      "command": "click",
+      "target": "css=.package-item-container:nth-child(1) .btn-detail",
+      "targets": [
+        ["css=.package-item-container:nth-child(1) .btn-detail", "css:finder"],
+        ["xpath=//div[@id='root']/div/section/div[3]/div/div[2]/div[3]/div[2]/a/div", "xpath:idRelative"],
+        ["xpath=//div[2]/a/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5ad90c83-9a56-4d96-bd80-643f0c2a8aaf",
+      "comment": "",
+      "command": "click",
+      "target": "css=.booking-btn",
+      "targets": [
+        ["css=.booking-btn", "css:finder"],
+        ["xpath=//div[@id='root']/div/section/div[2]/div[2]/div[2]/div/div[2]", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/div/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6d95692a-4b7c-4112-a7b8-47b75490e3cd",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,0)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2fffc85c-5f5a-43a2-8c15-2dfd1728372c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.edit-btn",
+      "targets": [
+        ["css=.edit-btn", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div/section/div[2]/div/form/div[5]/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'แก้ไขข้อมูล')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "dc2ff029-10f8-4faf-99f4-5bb81d3403d9",
+      "comment": "",
+      "command": "type",
+      "target": "css=.fname:nth-child(2) > input",
+      "targets": [
+        ["css=.fname:nth-child(2) > input", "css:finder"],
+        ["xpath=//input[@value='']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/div/section/div[2]/div/form/div[2]/input", "xpath:idRelative"],
+        ["xpath=//form/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c1cfbcb3-3b61-4eae-943d-5a491b2af60a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.edit-btn",
+      "targets": [
+        ["css=.edit-btn", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div/section/div[2]/div/form/div[5]/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'แก้ไขข้อมูล')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3d00dac2-6d3f-4318-8e78-68bb3d384287",
+      "comment": "",
+      "command": "click",
+      "target": "css=.sub-btn-box > .confirm-btn",
+      "targets": [
+        ["css=.sub-btn-box > .confirm-btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/div/section/div[2]/div/form/div[5]/div/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'บันทึก')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7922600b-2df8-43e9-ae77-4013673fee0e",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.ant-message-custom-content > span:nth-child(2)",
+      "targets": [
+        ["css=.ant-message-custom-content > span:nth-child(2)", "css:finder"],
+        ["xpath=//body/div[2]/div/div/div/div/span[2]", "xpath:position"],
+        ["xpath=//span[contains(.,'LastName is required')]", "xpath:innerText"]
+      ],
+      "value": "LastName is required"
+    }]
+  }, {
+    "id": "be23d8e8-2cf9-41e8-9ad9-93d30614fa6e",
+    "name": "Booking_Required_FirstName",
+    "commands": [{
+      "id": "56eb438c-1702-48d7-aeaf-fb4ad0091b61",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:5173/tour-package",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "50ec8c35-2c89-40d7-af79-d4813aed2bad",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1551x880",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "14d4fe25-5eee-445e-a443-45084fbaf415",
+      "comment": "",
+      "command": "click",
+      "target": "css=.package-item-container:nth-child(1) .btn-detail",
+      "targets": [
+        ["css=.package-item-container:nth-child(1) .btn-detail", "css:finder"],
+        ["xpath=//div[@id='root']/div/section/div[3]/div/div[2]/div[3]/div[2]/a/div", "xpath:idRelative"],
+        ["xpath=//div[2]/a/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5f3e1bcc-3d83-43e8-8e6a-def6ee02a54a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.booking-btn",
+      "targets": [
+        ["css=.booking-btn", "css:finder"],
+        ["xpath=//div[@id='root']/div/section/div[2]/div[2]/div[2]/div/div[2]", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/div/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5687723d-92da-4f9f-8f2e-32163446b184",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,0)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9145e6b7-3c5e-484d-9d47-bb0cd66ef59f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.edit-btn",
+      "targets": [
+        ["css=.edit-btn", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div/section/div[2]/div/form/div[5]/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'แก้ไขข้อมูล')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2a986bd3-dd23-44a3-a18a-c0c9e185756c",
+      "comment": "",
+      "command": "type",
+      "target": "css=.fname:nth-child(1) > input",
+      "targets": [
+        ["css=.fname:nth-child(2) > input", "css:finder"],
+        ["xpath=//input[@value='']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/div/section/div[2]/div/form/div[2]/input", "xpath:idRelative"],
+        ["xpath=//form/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d00dafeb-faed-408e-9776-0eeadcc10a76",
+      "comment": "",
+      "command": "click",
+      "target": "css=.edit-btn",
+      "targets": [
+        ["css=.edit-btn", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div/section/div[2]/div/form/div[5]/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'แก้ไขข้อมูล')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "24fd8a6b-a0d6-4d06-a6fd-1e768fce235e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.sub-btn-box > .confirm-btn",
+      "targets": [
+        ["css=.sub-btn-box > .confirm-btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/div/section/div[2]/div/form/div[5]/div/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'บันทึก')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9702571c-d00d-4935-a254-81aff2bd1061",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.ant-message-custom-content > span:nth-child(2)",
+      "targets": [
+        ["css=.ant-message-custom-content > span:nth-child(2)", "css:finder"],
+        ["xpath=//body/div[2]/div/div/div/div/span[2]", "xpath:position"],
+        ["xpath=//span[contains(.,'LastName is required')]", "xpath:innerText"]
+      ],
+      "value": "FirstName is required"
+    }]
+  }, {
+    "id": "bdd20065-9669-4a4c-b443-40c0e2024e70",
+    "name": "Booking_Required_PhoneNumber",
+    "commands": [{
+      "id": "4721842b-f896-48b6-8ae5-8bd042c1ed31",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:5173/tour-package",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "bca979e9-b168-4bec-a9a1-6e9bf9259a06",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1551x880",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a4ac2e69-29bb-44fa-9e0b-6779a98c08a1",
+      "comment": "",
+      "command": "click",
+      "target": "css=.package-item-container:nth-child(1) .btn-detail",
+      "targets": [
+        ["css=.package-item-container:nth-child(1) .btn-detail", "css:finder"],
+        ["xpath=//div[@id='root']/div/section/div[3]/div/div[2]/div[3]/div[2]/a/div", "xpath:idRelative"],
+        ["xpath=//div[2]/a/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3cd44429-1594-4602-9783-83a3fd6ae955",
+      "comment": "",
+      "command": "click",
+      "target": "css=.booking-btn",
+      "targets": [
+        ["css=.booking-btn", "css:finder"],
+        ["xpath=//div[@id='root']/div/section/div[2]/div[2]/div[2]/div/div[2]", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/div/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "708b3412-2f7c-4b19-9b5e-a4e3be8932bf",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,0)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b929c3bb-0c67-4cda-b5c5-905fedec3d29",
+      "comment": "",
+      "command": "click",
+      "target": "css=.edit-btn",
+      "targets": [
+        ["css=.edit-btn", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div/section/div[2]/div/form/div[5]/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'แก้ไขข้อมูล')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3705ac90-a3b6-4e5c-b893-f0a7026eb795",
+      "comment": "",
+      "command": "type",
+      "target": "css=.fname:nth-child(3) > input",
+      "targets": [
+        ["css=.fname:nth-child(2) > input", "css:finder"],
+        ["xpath=//input[@value='']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/div/section/div[2]/div/form/div[2]/input", "xpath:idRelative"],
+        ["xpath=//form/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1d640fba-a906-4108-ae10-cc85c90c6aad",
+      "comment": "",
+      "command": "click",
+      "target": "css=.edit-btn",
+      "targets": [
+        ["css=.edit-btn", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div/section/div[2]/div/form/div[5]/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'แก้ไขข้อมูล')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "bcf46053-3344-4f0e-9fcb-1294466543be",
+      "comment": "",
+      "command": "click",
+      "target": "css=.sub-btn-box > .confirm-btn",
+      "targets": [
+        ["css=.sub-btn-box > .confirm-btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/div/section/div[2]/div/form/div[5]/div/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'บันทึก')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3d76ea55-e5f1-4212-8709-ce80de0bf563",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.ant-message-custom-content > span:nth-child(2)",
+      "targets": [
+        ["css=.ant-message-custom-content > span:nth-child(2)", "css:finder"],
+        ["xpath=//body/div[2]/div/div/div/div/span[2]", "xpath:position"],
+        ["xpath=//span[contains(.,'LastName is required')]", "xpath:innerText"]
+      ],
+      "value": "PhoneNumber is required"
+    }]
+  }, {
+    "id": "7969feb5-aac4-40d7-8f13-9502e3b0c04b",
+    "name": "Booking_Invalid_PhoneNumber",
+    "commands": [{
+      "id": "b6f257ce-10fe-48f1-8f63-9b02dfed3022",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:5173/tour-package",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "084833ef-79a0-4ad2-a6fa-20a71047558a",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1551x880",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6aa19fce-c369-4277-8b01-c3f2b325cffd",
+      "comment": "",
+      "command": "click",
+      "target": "css=.package-item-container:nth-child(1) .btn-detail",
+      "targets": [
+        ["css=.package-item-container:nth-child(1) .btn-detail", "css:finder"],
+        ["xpath=//div[@id='root']/div/section/div[3]/div/div[2]/div[3]/div[2]/a/div", "xpath:idRelative"],
+        ["xpath=//div[2]/a/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "be4631fd-0847-4183-8546-d2205168ad30",
+      "comment": "",
+      "command": "click",
+      "target": "css=.booking-btn",
+      "targets": [
+        ["css=.booking-btn", "css:finder"],
+        ["xpath=//div[@id='root']/div/section/div[2]/div[2]/div[2]/div/div[2]", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/div/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5839b134-581a-4255-99d9-cbd8edaf8339",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,0)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "91dd04e5-a6fb-4486-bb87-c99c462ddd5e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.edit-btn",
+      "targets": [
+        ["css=.edit-btn", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div/section/div[2]/div/form/div[5]/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'แก้ไขข้อมูล')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2667fda3-b605-430a-bf5d-01a472a5fe82",
+      "comment": "",
+      "command": "type",
+      "target": "css=.fname:nth-child(3) > input",
+      "targets": [
+        ["css=.fname:nth-child(2) > input", "css:finder"],
+        ["xpath=//input[@value='']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/div/section/div[2]/div/form/div[2]/input", "xpath:idRelative"],
+        ["xpath=//form/div[2]/input", "xpath:position"]
+      ],
+      "value": "098-594-457G"
+    }, {
+      "id": "f2f2e466-43ae-493a-a7d4-1cf6e7a303e7",
+      "comment": "",
+      "command": "click",
+      "target": "css=.edit-btn",
+      "targets": [
+        ["css=.edit-btn", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div/section/div[2]/div/form/div[5]/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'แก้ไขข้อมูล')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c07b3ffa-5d56-4c3c-9739-cc64d70dd7d0",
+      "comment": "",
+      "command": "click",
+      "target": "css=.sub-btn-box > .confirm-btn",
+      "targets": [
+        ["css=.sub-btn-box > .confirm-btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/div/section/div[2]/div/form/div[5]/div/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'บันทึก')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "13acb2a0-efa1-43c0-961a-ce42e97f4b7d",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.ant-message-custom-content > span:nth-child(2)",
+      "targets": [
+        ["css=.ant-message-custom-content > span:nth-child(2)", "css:finder"],
+        ["xpath=//body/div[2]/div/div/div/div/span[2]", "xpath:position"],
+        ["xpath=//span[contains(.,'LastName is required')]", "xpath:innerText"]
+      ],
+      "value": "Invalid PhoneNumber format"
+    }]
+  }, {
+    "id": "0d692b77-e61c-4aaf-b4d6-c78e638c3d1a",
+    "name": "Booking_Required_Email",
+    "commands": [{
+      "id": "953a2f10-804d-49ea-89aa-4ae4e30f4496",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:5173/tour-package",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f1a1566f-5a40-4445-bf4f-9db211a5c76a",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1551x880",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7b0ea8c6-9f44-4d61-acfc-1110ae3ff4f4",
+      "comment": "",
+      "command": "click",
+      "target": "css=.package-item-container:nth-child(1) .btn-detail",
+      "targets": [
+        ["css=.package-item-container:nth-child(1) .btn-detail", "css:finder"],
+        ["xpath=//div[@id='root']/div/section/div[3]/div/div[2]/div[3]/div[2]/a/div", "xpath:idRelative"],
+        ["xpath=//div[2]/a/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "02af14d3-c17b-488f-8be7-34fe44bcb967",
+      "comment": "",
+      "command": "click",
+      "target": "css=.booking-btn",
+      "targets": [
+        ["css=.booking-btn", "css:finder"],
+        ["xpath=//div[@id='root']/div/section/div[2]/div[2]/div[2]/div/div[2]", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/div/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d26939b6-3fdb-4971-9859-452f9eb5ea7e",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,0)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0d86c825-ba9d-4bcc-b235-fc5ca4ede5f6",
+      "comment": "",
+      "command": "click",
+      "target": "css=.edit-btn",
+      "targets": [
+        ["css=.edit-btn", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div/section/div[2]/div/form/div[5]/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'แก้ไขข้อมูล')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9d841534-731d-4a6d-a760-059bc9f67109",
+      "comment": "",
+      "command": "type",
+      "target": "css=.fname:nth-child(4) > input",
+      "targets": [
+        ["css=.fname:nth-child(2) > input", "css:finder"],
+        ["xpath=//input[@value='']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/div/section/div[2]/div/form/div[2]/input", "xpath:idRelative"],
+        ["xpath=//form/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a8e9dfcb-6817-455f-8e95-e01cb7e1c94b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.edit-btn",
+      "targets": [
+        ["css=.edit-btn", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div/section/div[2]/div/form/div[5]/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'แก้ไขข้อมูล')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "65d474c3-6996-4d81-bfc7-4591cdad1eea",
+      "comment": "",
+      "command": "click",
+      "target": "css=.sub-btn-box > .confirm-btn",
+      "targets": [
+        ["css=.sub-btn-box > .confirm-btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/div/section/div[2]/div/form/div[5]/div/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'บันทึก')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "30f70a7f-5a93-4518-9e57-f129b09079b2",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.ant-message-custom-content > span:nth-child(2)",
+      "targets": [
+        ["css=.ant-message-custom-content > span:nth-child(2)", "css:finder"],
+        ["xpath=//body/div[2]/div/div/div/div/span[2]", "xpath:position"],
+        ["xpath=//span[contains(.,'LastName is required')]", "xpath:innerText"]
+      ],
+      "value": "Email is required"
+    }]
+  }, {
+    "id": "8b016051-be5f-4328-8160-c20fa71e1ff9",
+    "name": "Booking_Invalid_Email",
+    "commands": [{
+      "id": "faa42e90-4904-485b-90b3-5e571d61283e",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:5173/tour-package",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5922b04f-9784-4384-8c6b-a99a2ea477f8",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1551x880",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c70a0691-178f-4a00-a5e2-da4838bf91da",
+      "comment": "",
+      "command": "click",
+      "target": "css=.package-item-container:nth-child(1) .btn-detail",
+      "targets": [
+        ["css=.package-item-container:nth-child(1) .btn-detail", "css:finder"],
+        ["xpath=//div[@id='root']/div/section/div[3]/div/div[2]/div[3]/div[2]/a/div", "xpath:idRelative"],
+        ["xpath=//div[2]/a/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "dcfc72e7-fb30-420f-8130-3307f3583a88",
+      "comment": "",
+      "command": "click",
+      "target": "css=.booking-btn",
+      "targets": [
+        ["css=.booking-btn", "css:finder"],
+        ["xpath=//div[@id='root']/div/section/div[2]/div[2]/div[2]/div/div[2]", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/div/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b24a8bfe-b8e5-43b9-b171-b3a455799a6b",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,0)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e16f721c-c359-4b43-84e9-65075685a86f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.edit-btn",
+      "targets": [
+        ["css=.edit-btn", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div/section/div[2]/div/form/div[5]/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'แก้ไขข้อมูล')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "dcb1363c-d74e-4533-9635-90ca97f0c186",
+      "comment": "",
+      "command": "type",
+      "target": "css=.fname:nth-child(4) > input",
+      "targets": [
+        ["css=.fname:nth-child(2) > input", "css:finder"],
+        ["xpath=//input[@value='']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/div/section/div[2]/div/form/div[2]/input", "xpath:idRelative"],
+        ["xpath=//form/div[2]/input", "xpath:position"]
+      ],
+      "value": "spidergmail.com"
+    }, {
+      "id": "abd88f70-f4a3-4cee-a60d-77862ce0dd90",
+      "comment": "",
+      "command": "click",
+      "target": "css=.edit-btn",
+      "targets": [
+        ["css=.edit-btn", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div/section/div[2]/div/form/div[5]/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'แก้ไขข้อมูล')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "df6c39cd-d53b-4515-8333-b59a3faf4e7a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.sub-btn-box > .confirm-btn",
+      "targets": [
+        ["css=.sub-btn-box > .confirm-btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/div/section/div[2]/div/form/div[5]/div/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'บันทึก')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "15616ae3-2627-48d7-b495-1e0a0215e903",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.ant-message-custom-content > span:nth-child(2)",
+      "targets": [
+        ["css=.ant-message-custom-content > span:nth-child(2)", "css:finder"],
+        ["xpath=//body/div[2]/div/div/div/div/span[2]", "xpath:position"],
+        ["xpath=//span[contains(.,'LastName is required')]", "xpath:innerText"]
+      ],
+      "value": "Email is invalid"
+    }]
+  }, {
+    "id": "a4bc0739-ca4a-4440-b9e8-c29516a91a49",
+    "name": "Edit_Valid_Customer",
+    "commands": [{
+      "id": "51bb6ca5-a033-4095-8a33-e90ae5a1573e",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:5173/tour-package",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ea8f323b-4cf6-45f2-8900-add710c4f56b",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1551x880",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a6ff3206-f0ce-4289-b0d6-285735be50ee",
+      "comment": "",
+      "command": "click",
+      "target": "css=.package-item-container:nth-child(1) .btn-detail",
+      "targets": [
+        ["css=.package-item-container:nth-child(1) .btn-detail", "css:finder"],
+        ["xpath=//div[@id='root']/div/section/div[3]/div/div[2]/div[3]/div[2]/a/div", "xpath:idRelative"],
+        ["xpath=//div[2]/a/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "12b2995e-23ba-44ae-9b85-0d64c2a47993",
+      "comment": "",
+      "command": "click",
+      "target": "css=.booking-btn",
+      "targets": [
+        ["css=.booking-btn", "css:finder"],
+        ["xpath=//div[@id='root']/div/section/div[2]/div[2]/div[2]/div/div[2]", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/div/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a5324b9d-c264-4bcd-bc53-da527eda93a2",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,0)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5c86f188-76bb-453a-9a9f-53395b087db2",
+      "comment": "",
+      "command": "click",
+      "target": "css=.edit-btn",
+      "targets": [
+        ["css=.edit-btn", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div/section/div[2]/div/form/div[5]/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'แก้ไขข้อมูล')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "dfd24b79-f9a2-4a90-a2b3-8c34e646242f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.sub-btn-box > .confirm-btn",
+      "targets": [
+        ["css=.sub-btn-box > .confirm-btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/div/section/div[2]/div/form/div[5]/div/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'บันทึก')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "75999196-ccac-4f9f-a5b9-11ea4f8e7079",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ant-message-notice-content",
+      "targets": [
+        ["css=.ant-message-notice-content", "css:finder"],
+        ["xpath=//body/div[2]/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5e758aff-86d4-4a5c-968b-313a206fed99",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.ant-message-custom-content > span:nth-child(2)",
+      "targets": [
+        ["css=.ant-message-custom-content > span:nth-child(2)", "css:finder"],
+        ["xpath=//body/div[2]/div/div/div/div/span[2]", "xpath:position"],
+        ["xpath=//span[contains(.,'อัพเดตข้อมูลเรียบร้อยแล้ว')]", "xpath:innerText"]
+      ],
+      "value": "อัพเดตข้อมูลเรียบร้อยแล้ว"
+    }]
+  }],
+  "suites": [{
+    "id": "4405b145-bf23-44ba-bfc3-73bb598d1d40",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["be66197d-71ad-4d85-847b-d7bd85eb6508"]
+  }],
+  "urls": ["http://localhost:5173/", "http://localhost:5173/tour-package"],
+  "plugins": []
+}

@@ -1,0 +1,425 @@
+@import "../../styles/ColorSheet.css";
+
+.profile-page {
+    width: 100vw;
+    height: 100vh;
+    overflow: scroll;
+    overflow-y: auto;
+    overflow-x: hidden;
+    display: flex;
+    justify-content: center;
+
+    & section {
+        width: 75%;
+        margin-top: 35px;
+        min-height: calc(100% - 35px);
+        padding: 40px 0px 22px 0px;
+        display: flex;
+        gap: 22px;
+
+        & .card-dashbord {
+            width: 30%;
+            background-color: var(--card-color);
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            padding: 30px 22px 16px 22px;
+            align-items: center;
+            overflow: scroll;
+            overflow-x: hidden;
+            position: relative;
+            box-shadow: 0 0px 5px rgba(0, 0, 0, 0.2);
+
+            & .img-box {
+                width: 120px;
+                min-width: 120px;
+                height: 120px;
+                min-height: 120px;
+                box-shadow: 0 0px 5px rgba(0, 0, 0, 0.2);
+                border-radius: 50%;
+                overflow: hidden;
+
+                & img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+
+            & .profile-detail {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                & .username {
+                    font-weight: 600;
+                    margin: 10px 0px 6px 0px;
+                    display: flex;
+                    align-items: center;
+                    gap: 6px;
+
+                    & .gender-img{
+                        width: 18px;
+                        height: 18px;
+                        left: 170px;
+                        top: 130px;
+
+                        & img {
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                        }
+                    }
+                }
+
+                & .name,
+                .email {
+                    color: var(--description-color);
+                    font-size: 14px;
+                }
+            }
+
+            & .nav-btn-box {
+                width: 100%;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-between;
+                margin-top: 16px;
+
+                & .top-box,
+                .bottom-box {
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 8px;
+
+                    & .btn {
+                        width: 100%;
+                        height: 45px;
+                        border-radius: 10px;
+                        border: 0px;
+                        background-color: var(--btn-color-3);
+                        font-weight: 500;
+                        color: var(--description-color);
+                        font-size: 14px;
+                        transition: all ease-in-out 0.3s;
+                    }
+
+                    & .btn.active {
+                        background-color: var(--btn-color-4);
+                        font-weight: 600;
+                        color: var(--text-btn-color-2);
+                    }
+
+                    & .btn:hover {
+                        box-shadow: 0 0px 4px rgba(0, 0, 0, 0.2);
+                    }
+
+                    & .logout-btn {
+                        background-color: transparent;
+                        border: 1px solid var(--border-color-2);
+                        margin-top: 22px;
+                    }
+                }
+            }
+        }
+
+        & .card-dashbord::-webkit-scrollbar {
+            display: none;
+        }
+
+        & .card-detail {
+            width: 70%;
+            background-color: var(--card-color);
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+            z-index: 1;
+            box-shadow: 0 0px 5px rgba(0, 0, 0, 0.2);
+
+            & .con {
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                padding: 28px 50px;
+                left: 50%;
+                opacity: 0;
+                transition: all 0.5s ease-in-out;
+
+                & .title {
+                    color: var(--title-color-2);
+                    font-size: 16px;
+                    margin-bottom: 20px;
+                    font-weight: 700;
+                }
+            }
+
+            & .sub-container {
+                width: 100%;
+                height: 95%;
+                gap: 10px;
+                display: flex;
+                flex-direction: column;
+                overflow: scroll;
+
+                & .no-data{
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 8px;
+                    font-size: 14px;
+                    padding-bottom: 100px;
+
+                    & span {
+                        font-weight: 500;
+                    }
+
+                    & .img-box{
+                        width: 60px;
+                        height: 60px;
+                        overflow: hidden;
+                        margin-bottom: 10px;
+
+                        & img {
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                        }
+                    }
+
+                    & .nodata-btn{
+                        width: 100px;
+                        height: 30px;
+                        border: 1px solid var(--btn-color-1);
+                        border-radius: 5px;
+                        color: var(--btn-color-1);
+                        transition: all 0.5s ease;
+                    }
+
+                    & .nodata-btn:hover{
+                        background: var(--btn-color-1);
+                        color: var(--text-btn-color-1);
+                        box-shadow: 0 0px 5px rgba(0, 0, 0, 0.2);
+                    }
+                }
+            }
+
+            & .sub-container::-webkit-scrollbar {
+                display: none;
+            }
+
+            & .your-booking-container {
+                & .booking-box {
+                    border-radius: 10px;
+                    padding: 8px 20px;
+                    display: flex;
+                    font-size: 14px;
+                    flex-direction: column;
+                    border: 1px solid;
+
+                    & .container {
+                        width: 100%;
+                        display: flex;
+                        justify-content: space-between;
+
+                        & .text-box {
+                            display: flex;
+                            flex-direction: column;
+                            padding-right: 6px;
+
+                            & .tour-name {
+                                font-weight: 500;
+                            }
+
+                            & .tourID {
+                                color: var(--description-color);
+                            }
+                        }
+
+
+                        & .btn-box {
+                            display: flex;
+                            gap: 8px;
+
+                            & .time{
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                gap: 3px;
+                                padding: 0px 10px;
+                                font-size: 14px;
+
+                                & .text{
+                                    line-height: 0%;
+                                }
+                            }
+
+                            & .check-btn {
+                                padding: 0px 5px;
+                                font-weight: 400;
+                                font-weight: 500;
+                            }
+
+                            & .check-status-btn {
+                                color: var(--title-color-2);
+                            }
+                        }
+                    }
+
+                    & .status-box {
+                        width: 100%;
+                        margin-top: 20px;
+                        display: flex;
+                        justify-content: center;
+
+                        & .step-error {
+                            display: flex;
+                        }
+
+                        & .ant-steps-item-title {
+                            font-family: "Noto Sans Thai", sans-serif;
+                            font-size: 14px;
+                            height: 20px;
+                            margin-bottom: 4px;
+                        }
+
+                        & .ant-steps-item-icon {
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                        }
+
+                        & .ant-steps-item-content {
+                            margin-top: 5px;
+                        }
+
+                        & .ant-steps-icon {
+                            font-family: "Noto Sans Thai", sans-serif;
+                            font-weight: 600;
+                        }
+
+                        & :where(.css-dev-only-do-not-override-49qm).ant-steps .ant-steps-item-process .ant-steps-item-icon {
+                            background-color: var(--green);
+                            border-color: var(--green);
+                        }
+                    }
+                }
+            }
+
+            & .payment-history-container {
+                & .payment-box {
+                    border-radius: 10px;
+                    padding: 8px 20px;
+                    display: flex;
+                    font-size: 14px;
+                    border: 1px solid var(--border-color-2);
+                    justify-content: space-between;
+                    align-items: center;
+                    color: var(--description-color);
+
+                    & .date-box {
+                        display: flex;
+                        gap: 10px;
+                    }
+
+                    & .check-slip {
+                        color: var(--title-color-2);
+                    }
+                }
+            }
+
+            & .edit-profile-container {
+                & .edit-form {
+                    padding: 32px;
+                }
+
+                & label {
+                    font-weight: 600;
+                }
+
+                & .edit-form .upload-profile {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                    margin-bottom: 50px;
+                }
+
+                & .btn{
+                    width: 80px;
+                    height: 30px;
+                    border-radius: 5px;
+                    border: 1px solid #7e7e7e;
+                    color: #7e7e7e;
+                    transition: all 0.5s ease;
+                }
+
+                & .submit-btn{
+                    border: 1px solid var(--btn-color-1);
+                    background: var(--btn-color-1);
+                    color: var(--text-btn-color-1);
+                    margin-left: 4px;
+                }
+
+                & .submit-btn:hover{
+                    box-shadow: 0 0px 5px rgba(0, 0, 0, 0.2);
+                }
+
+                & .cancel-btn:hover{
+                    box-shadow: 0 0px 5px rgba(0, 0, 0, 0.2);
+                }
+            }
+
+            & .your-booking-container.active,
+            .payment-history-container.active,
+            .edit-profile-container.active {
+                transform: translateX(-50%);
+                opacity: 1;
+                z-index: 99;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1100px){
+    .profile-page section{
+        flex-direction: column;
+        justify-content: start;
+
+        .card-dashbord{
+            width: 100%;
+
+            .nav-btn-box{
+                flex-direction: row;
+                gap: 22px;
+
+                .top-box{
+                    flex-direction: row;
+                }
+
+                .bottom-box{
+                    align-items: end;
+                    width: 150px;
+                }
+
+                .bottom-box .logout-btn{
+                    margin: 0;
+                }
+            }
+        }
+
+        .card-detail{
+            min-height: 500px;
+            width: 100%;
+            height: auto;
+        }
+    }
+}

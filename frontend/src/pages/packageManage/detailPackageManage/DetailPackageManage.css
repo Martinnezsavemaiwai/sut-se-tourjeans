@@ -1,0 +1,431 @@
+@import "../../../styles/ColorSheet.css";
+
+.tour-select-page-manage {
+    background-color: #ffffe8;
+
+    .sub-tour-select-page {
+        height: 100vh;
+        overflow: scroll;
+        overflow-y: auto;
+        overflow-x: hidden;
+
+        & section {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 10px;
+            padding: 35px;
+
+            & .package-detail {
+                width: 75%;
+                display: flex;
+                justify-content: space-between;
+
+                & .image-box {
+                    width: 40%;
+                    height: auto;
+                    display: flex;
+                    flex-direction: column;
+
+                    & .big-image {
+                        width: 100%;
+                        height: 45%;
+                        overflow: hidden;
+                        border-radius: 10px;
+                        margin-bottom: 20px;
+                        box-shadow: 0 0px 5px rgba(0, 0, 0, 0.2);
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        background: var(--orange-yellow-for-bg);
+
+                        & img {
+                            width: 99%;
+                            height: 99%;
+                            object-fit: cover;
+                            border-radius: 10px;
+                        }
+                    }
+
+                    & .small-image {
+                        height: 24%;
+                        width: 100%;
+                        display: flex;
+                        overflow: scroll;
+                        overflow-x: auto;
+                        overflow-y: hidden;
+                        padding: 15px 0px;
+                        gap: 10px;
+
+
+                        & .sImage {
+                            height: 100%;
+                            min-width: 220px;
+                            border-radius: 10px;
+                            cursor: pointer;
+                            overflow: hidden;
+                            box-shadow: 0 0px 5px rgba(0, 0, 0, 0.2);
+
+
+                            & img {
+                                width: 100%;
+                                height: 100%;
+                                object-fit: cover;
+                            }
+                        }
+                    }
+
+                    .small-image::-webkit-scrollbar-thumb {
+                        border-radius: 15px;
+                        -webkit-box-shadow: inset 0 0 6px rgba(255, 255, 255, 0.3);
+                        background-color: #b4b4b4;
+                        margin-top: 50px;
+                    }
+                }
+
+                & .description-box {
+                    width: 57%;
+                    display: flex;
+                    flex-direction: column;
+                    background-color: rgb(255, 255, 255);
+                    box-shadow: 0 0px 5px rgba(0, 0, 0, 0.2);
+                    border-radius: 10px;
+                    padding: 25px 50px;
+                    margin-bottom: 0px;
+
+                    & .tour-name {
+                        font-weight: 350;
+                        font-size: 22px;
+                        color: var(--blue);
+                    }
+
+                    & .des-box {
+                        & .title {
+                            font-weight: 600;
+                            color: #0094DE;
+                        }
+
+                        & .detail {
+                            padding: 5px 15px;
+                        }
+                    }
+
+                    & .package-detail-box {
+                        margin: 15px 0px;
+                    }
+
+                    & .price-box {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: end;
+
+                        & .price-title {
+                            font-weight: 600;
+                        }
+
+                        & .price {
+                            font-weight: 700;
+                            font-size: 1.3rem;
+                            color: var(--orange);
+                        }
+                    }
+
+                    & hr {
+                        border: none;
+                        border-top: 2px dashed #B1B1B1;
+                        margin: 20px 0;
+                    }
+                }
+            }
+
+            & .travel-a {
+                width: 75%;
+                height: 100%;
+                /* ลด padding เพื่อขยับเนื้อหาขึ้น */
+                border-radius: 10px;
+                margin-top: 27px;
+                display: auto;
+                flex-direction: column;
+                display: flex;
+                gap: 27px;
+
+                & .title-box {
+                    width: 100%;
+                    height: 80px;
+                    display: flex;
+                    justify-content: flex-end;
+
+                    & .img-box {
+                        width: 30px;
+                        height: 30px;
+                        margin-right: -900px;
+                        margin-top: -5px;
+
+                        & img {
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                        }
+                    }
+                }
+
+                & .travel-schedule {
+                    width: 100%;
+                    height: auto;
+                    background-color: rgb(255, 255, 255);
+                    box-shadow: 0 0px 5px rgba(0, 0, 0, 0.2);
+                    padding: 30px 50px;
+                    border-radius: 10px;
+                    margin-top: 0px;
+                    flex-direction: column;
+
+                    & .title-box {
+                        width: 100%;
+                        height: 40px;
+
+                        & .img-box {
+                            width: 30px;
+                            height: 30px;
+                            margin-right: 15px;
+                            margin-top: -20px;
+
+                            & img {
+                                width: 100%;
+                                height: 100%;
+                            }
+                        }
+                    }
+
+                    & .subsection {
+                        width: 100%;
+                        display: flex;
+                        margin-top: 20px;
+
+                        & .calendar-box {
+                            width: 40%;
+                            display: flex;
+                            justify-content: center;
+                        }
+
+                        & .travel-schedule-detail {
+                            width: 60%;
+                            display: flex;
+                            flex-direction: column;
+
+                            & .date-booking-box {
+                                display: flex;
+                                width: 100%;
+                                height: 50px;
+                                justify-content: space-between;
+                                align-items: center;
+
+                                & .date-booking {
+                                    width: 80%;
+                                    height: 100%;
+                                    border: 2px solid #B1B1B1;
+                                    box-shadow: 0 0px 3px rgba(0, 0, 0, 0.2);
+                                    display: flex;
+                                    align-items: center;
+                                    padding: 0px 25px;
+                                    font-weight: 500;
+                                }
+
+                                & .booking-btn {
+                                    width: 17%;
+                                    height: 100%;
+                                    background-color: var(--green);
+                                    transition: all ease 0.5s;
+                                    color: var(--white);
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                    font-weight: 700;
+                                    box-shadow: 0 0px 3px rgba(0, 0, 0, 0.2);
+                                    cursor: pointer;
+
+                                }
+
+                                & .booking-btn:hover {
+                                    box-shadow: 0 0px 5px rgba(0, 0, 0, 0.5);
+                                    border-radius: 5px;
+                                }
+                            }
+
+                            & .price-detail {
+                                display: flex;
+                                flex-direction: column;
+                                border: 2px dashed #B1B1B1;
+                                margin-top: 28px;
+                                padding: 25px 25px;
+                                height: 100%;
+
+                                & .title {
+                                    font-weight: 600;
+                                    margin-bottom: 10px;
+                                    font-size: 1.1rem;
+                                }
+
+                                & .person-type-title {
+                                    display: flex;
+                                    gap: 20px;
+                                    align-items: center;
+                                }
+
+                                & .type-box {
+                                    display: flex;
+                                    flex-direction: column;
+                                    /* จัดข้อความในแนวตั้ง */
+                                    align-items: flex-start;
+
+                                    & .type-title {
+                                        width: 100%;
+                                        color: var(--blue);
+                                        margin-bottom: 10px;
+                                        font-weight: 500;
+                                    }
+
+                                    & .price-box {
+                                        display: flex;
+                                        width: 100%;
+                                        justify-content: space-between;
+                                        margin: 3px 0px;
+
+                                        & .price {
+                                            color: var(--orange);
+                                            font-weight: 600;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+
+                }
+            }
+
+            & .travel-plane {
+                width: 75%;
+                height: auto;
+                background-color: rgb(255, 255, 255);
+                box-shadow: 0 0px 5px rgba(0, 0, 0, 0.2);
+                padding: 30px 50px;
+                border-radius: 10px;
+                margin-top: 27px;
+                display: flex;
+                flex-direction: column;
+
+                & .title-box {
+                    width: 100%;
+                    height: 40px;
+                    display: flex;
+
+                    & .img-box {
+                        width: 30px;
+                        height: 30px;
+                        margin-right: 15px;
+
+                        & img {
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                        }
+                    }
+                }
+
+                & .activities-box {
+                    display: flex;
+                    flex-wrap: wrap;
+                    padding: 0px 30px;
+
+                    & .date-box {
+                        /* border: 1px solid red; */
+                        width: 50%;
+                        padding: 10px 20px;
+
+                        & .day-title {
+                            font-weight: 600;
+                            display: flex;
+                            margin-bottom: 8px;
+                        }
+
+                        & ul {
+                            list-style: none;
+                            margin-left: 15px;
+
+                            & .date {
+                                font-weight: 500;
+                                margin-bottom: 8px;
+
+                                & .description {
+                                    font-weight: 400;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    & .title {
+        font-weight: 600;
+        font-size: 18px;
+        color: #0094DE;
+        margin-bottom: 5px;
+    }
+
+    .star-item {
+        list-style-type: none;
+        padding-left: 20px;
+        position: relative;
+    }
+
+    .hA {
+        color: #0094DE;
+    }
+
+    .custom-table {
+        width: 100%;
+        border-collapse: collapse;
+        font-family: Arial, sans-serif;
+    }
+
+    .custom-table th,
+    .custom-table td {
+        padding: 10px;
+        text-align: left;
+        border: 1px solid #ffffff;
+    }
+
+    .custom-table thead {
+        background-color: #000000;
+        color: #fff;
+    }
+
+    .custom-table tr:nth-child(even) {
+        background-color: #f5f5f5;
+    }
+
+    .custom-table td {
+        word-wrap: break-word;
+    }
+
+    .back-button {
+        background-color: #000;
+        color: #fff;
+        border: none;
+        padding: 8px 16px;
+        margin-left: 50px;
+        top: 40px;
+        cursor: pointer;
+        border-radius: 15px;
+        height: 37px;
+    }
+
+    .back-button:hover {
+        background-color: #6f6e6e;
+    }
+}

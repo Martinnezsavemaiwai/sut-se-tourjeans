@@ -1,0 +1,298 @@
+{
+  "id": "de212741-b817-4f46-ad5d-d785444f1c7e",
+  "version": "2.0",
+  "name": "PaymentTourSystem",
+  "url": "http://localhost:5173/profile",
+  "tests": [{
+    "id": "7f80e5ed-4d04-42a3-acac-b30a031989d4",
+    "name": "Payment_Success",
+    "commands": [{
+      "id": "38115413-678c-42d8-b80a-e5b1e541c464",
+      "comment": "",
+      "command": "open",
+      "target": "/profile",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "80b6a86d-9886-4542-bd69-3538196c3cf6",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1551x880",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "fa37167c-428b-409d-957b-a80f144e45e2",
+      "comment": "",
+      "command": "click",
+      "target": "css=.booking-box:nth-child(2) .check-detail-btn",
+      "targets": [
+        ["css=.booking-box:nth-child(2) .check-detail-btn", "css:finder"],
+        ["xpath=//div[@id='root']/div/section/div[2]/div/div/div[2]/div/div[2]/button", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div[2]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5e07b1dc-bfed-4868-a1d1-999be96fba47",
+      "comment": "",
+      "command": "type",
+      "target": "id=upload-file",
+      "targets": [],
+      "value": "D:\\Programming\\SE_Project\\selenium\\ImageForTest\\slip_valid.jpg"
+    }, {
+      "id": "a11cf0be-6a14-491f-a8e3-8691410c8c70",
+      "comment": "",
+      "command": "click",
+      "target": "css=.upload-btn",
+      "targets": [
+        ["css=.upload-btn", "css:finder"],
+        ["xpath=(//button[@type='submit'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/section/div[2]/div[2]/form/button", "xpath:idRelative"],
+        ["xpath=//form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'อัพโหลดสลิป')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "49f2edc0-082f-4972-973b-b6a4ddd2f356",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ant-btn-primary:nth-child(2) > span",
+      "targets": [
+        ["css=.ant-btn-primary:nth-child(2) > span", "css:finder"],
+        ["xpath=//button[2]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'ยืนยัน')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f2d153c8-97c4-446b-b504-9a71de90b15a",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.ant-message-custom-content > span:nth-child(2)",
+      "targets": [
+        ["css=.ant-message-custom-content > span:nth-child(2)", "css:finder"],
+        ["xpath=//div/div/div/div/span[2]", "xpath:position"],
+        ["xpath=//span[contains(.,'สลิปไม่ถูกต้อง')]", "xpath:innerText"]
+      ],
+      "value": "อัพโหลดสลิปสำเร็จ!"
+    }]
+  }, {
+    "id": "b731cbf3-bf59-4ad1-a493-091bdc9c9fa1",
+    "name": "Payment_Slip_Required",
+    "commands": [{
+      "id": "42943d9a-1c81-4437-8b73-ec08c0b811c5",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:5173/profile",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "08447f4e-ced1-4c7c-853d-ef176b8962c2",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1551x880",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c97785b2-6f03-4433-8c47-3bacbd470076",
+      "comment": "",
+      "command": "click",
+      "target": "css=.check-detail-btn:nth-child(2)",
+      "targets": [
+        ["css=.check-detail-btn:nth-child(2)", "css:finder"],
+        ["xpath=//div[@id='root']/div/section/div[2]/div/div/div[2]/div/div[2]/button", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div[2]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c3fc043a-ba61-42c5-ad33-25a1938a9d98",
+      "comment": "",
+      "command": "click",
+      "target": "css=.upload-btn",
+      "targets": [
+        ["css=.upload-btn", "css:finder"],
+        ["xpath=(//button[@type='submit'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/section/div[2]/div[2]/form/button", "xpath:idRelative"],
+        ["xpath=//form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'อัพโหลดสลิป')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d879f552-c162-409a-8261-9abf8532eab1",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.ant-message-custom-content > span:nth-child(2)",
+      "targets": [
+        ["css=.ant-message-custom-content > span:nth-child(2)", "css:finder"],
+        ["xpath=//div/span[2]", "xpath:position"],
+        ["xpath=//span[contains(.,'กรุณาเลือกไฟล์ก่อน')]", "xpath:innerText"]
+      ],
+      "value": "กรุณาเลือกไฟล์ก่อน"
+    }]
+  }, {
+    "id": "61232ec6-80df-4866-9f17-51a02933e9ae",
+    "name": "Payment_Cancel_Booking_Success",
+    "commands": [{
+      "id": "f7c05376-0695-4c8a-894e-e90a665c2c44",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:5173/profile",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f7b56158-8883-405d-9cea-11591107cf44",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1551x880",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "69f241ef-64cc-4166-a095-6f2cbdae3480",
+      "comment": "",
+      "command": "click",
+      "target": "css=.check-detail-btn",
+      "targets": [
+        ["css=.check-detail-btn", "css:finder"],
+        ["xpath=//div[@id='root']/div/section/div[2]/div/div/div/div[2]/button", "xpath:idRelative"],
+        ["xpath=//div/div/div/div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'รายละเอียด')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "dfdd9347-5c4f-4d8d-83b2-6848f13c738a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.check-detail-btn:nth-child(2)",
+      "targets": [
+        ["css=.check-detail-btn:nth-child(2)", "css:finder"],
+        ["xpath=//div[@id='root']/div/section/div[2]/div/div/div[2]/div/div[2]/button", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div[2]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7ec0a464-6b24-471d-87f8-863bfc58c5e6",
+      "comment": "",
+      "command": "click",
+      "target": "css=.cancel-btn",
+      "targets": [
+        ["css=.cancel-btn", "css:finder"],
+        ["xpath=//div[@id='root']/div/section/div[2]/div[2]/button", "xpath:idRelative"],
+        ["xpath=//div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'ยกเลิกการจอง')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "97ba5905-1378-4da2-ac0b-d7b2e390949d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ant-btn-primary",
+      "targets": [
+        ["css=.ant-btn-primary", "css:finder"],
+        ["xpath=(//button[@type='button'])[3]", "xpath:attributes"],
+        ["xpath=//div[2]/button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'ยืนยัน')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "73441f81-723a-4bfb-8b83-83192f3c21fa",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ant-message-notice-content",
+      "targets": [
+        ["css=.ant-message-notice-content", "css:finder"],
+        ["xpath=//body/div[2]/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "27d12fa3-0db1-4e66-8222-ae11c6ce959a",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.ant-message-custom-content > span:nth-child(2)",
+      "targets": [
+        ["css=.ant-message-custom-content > span:nth-child(2)", "css:finder"],
+        ["xpath=//div/span[2]", "xpath:position"],
+        ["xpath=//span[contains(.,'การจองถูกยกเลิกแล้ว')]", "xpath:innerText"]
+      ],
+      "value": "การจองถูกยกเลิกแล้ว"
+    }]
+  }, {
+    "id": "892e68e2-ed4f-4f17-9c8a-b399abf552bd",
+    "name": "Payment_Slip_Invalid",
+    "commands": [{
+      "id": "2c362ec3-61b3-4d5e-a9d9-27edebff2415",
+      "comment": "",
+      "command": "open",
+      "target": "/profile",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1c4a43a4-b454-4e78-8cea-c1ca28409897",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1551x880",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e7a08290-6696-4c1c-a94b-79d0ba3442b1",
+      "comment": "",
+      "command": "click",
+      "target": "css=.check-detail-btn:nth-child(2)",
+      "targets": [
+        ["css=.check-detail-btn:nth-child(2)", "css:finder"],
+        ["xpath=//div[@id='root']/div/section/div[2]/div/div/div[2]/div/div[2]/button", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div[2]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "58c259ed-d55b-46e6-95d9-ebeb5f1386ba",
+      "comment": "",
+      "command": "type",
+      "target": "id=upload-file",
+      "targets": [],
+      "value": "D:\\Programming\\SE_Project\\selenium\\ImageForTest\\slip_invalid.jpg"
+    }, {
+      "id": "559b5393-f3dc-45e9-b0df-4ac3073b42fe",
+      "comment": "",
+      "command": "click",
+      "target": "css=.upload-btn",
+      "targets": [
+        ["css=.upload-btn", "css:finder"],
+        ["xpath=(//button[@type='submit'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/section/div[2]/div[2]/form/button", "xpath:idRelative"],
+        ["xpath=//form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'อัพโหลดสลิป')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1d3cb188-dcdd-4909-a526-c3778c3f4509",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ant-btn-primary > span",
+      "targets": [
+        ["css=.ant-btn-primary > span", "css:finder"],
+        ["xpath=//button[2]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'ยืนยัน')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "87826e11-509f-492d-b3b8-2567aa2622e5",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.ant-message-custom-content > span:nth-child(2)",
+      "targets": [
+        ["css=.ant-message-custom-content > span:nth-child(2)", "css:finder"],
+        ["xpath=//div/div/div/div/span[2]", "xpath:position"],
+        ["xpath=//span[contains(.,'สลิปไม่ถูกต้อง')]", "xpath:innerText"]
+      ],
+      "value": "สลิปไม่ถูกต้อง"
+    }]
+  }],
+  "suites": [{
+    "id": "8a0b31d0-4c88-4e85-b73a-abef19be3d18",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["7f80e5ed-4d04-42a3-acac-b30a031989d4"]
+  }],
+  "urls": ["http://localhost:5173/", "http://localhost:5173/profile"],
+  "plugins": []
+}

@@ -1,0 +1,19 @@
+@import "../../styles/ColorSheet.css";
+
+& .buy-insurance-btn{
+    padding: 6px 10px;
+    border: 1px solid var(--btn-color-2);
+    background: var(--btn-color-2);
+    color: var(--text-btn-color-1);
+    border-radius: 5px;
+    transition: all 0.5s ease;
+}
+
+& .buy-insurance-btn:hover{
+    box-shadow: 0 0px 4px rgba(0, 0, 0, 0.2);
+}
+
+& .insurselectbox{
+    width: 200px;
+    height: 200px;
+}

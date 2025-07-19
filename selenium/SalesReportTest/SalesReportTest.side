@@ -1,0 +1,216 @@
+{
+  "id": "2848a0fb-ed4c-46df-8e38-64d9f97f4672",
+  "version": "2.0",
+  "name": "Dashboard",
+  "url": "http://localhost:5173",
+  "tests": [{
+    "id": "49e73b54-0174-47ee-8136-5008a23bffd8",
+    "name": "Untitled",
+    "commands": [{
+      "id": "b3f44d8c-3aad-48bb-b02c-2cd054330dff",
+      "comment": "",
+      "command": "open",
+      "target": "/dashboard",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a4efe921-c3d7-4830-961d-39f71b11cdef",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1050x728",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ded24566-9798-4ed1-9874-26261fe66c9e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ant-btn-primary > span",
+      "targets": [
+        ["css=.ant-btn-primary > span", "css:finder"],
+        ["xpath=//div[@id='root']/div/main/div/div/div[2]/div/div/div/div/div[3]/div/div/div/div[2]/button/span", "xpath:idRelative"],
+        ["xpath=//div/div/div[2]/button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'รายงานการขายประจำเดือน')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b730aa79-0f7d-498b-9c1b-5126fefb0345",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.ant-btn-primary > span",
+      "targets": [
+        ["css=.ant-btn-primary > span", "css:finder"],
+        ["xpath=//div[@id='root']/div/main/div/div/div[2]/div/div/div/div/div[3]/div/div/div/div[2]/button/span", "xpath:idRelative"],
+        ["xpath=//div/div/div[2]/button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'รายงานการขายประจำเดือน')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "aaed7da2-d83e-4d76-96fb-74cddc197c1b",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.ant-btn:nth-child(2) > span",
+      "targets": [
+        ["css=.ant-btn:nth-child(2) > span", "css:finder"],
+        ["xpath=//div[@id='root']/div/main/div/div/div[2]/div/div/div/div/div[3]/div/div/div/div[2]/button/span", "xpath:idRelative"],
+        ["xpath=//div/div/div[2]/button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'รายงานการขายประจำเดือน')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8acd09a9-544b-464f-bb03-36254c98fc7e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ant-btn-block > span",
+      "targets": [
+        ["css=.ant-btn-block > span", "css:finder"],
+        ["xpath=//div[7]/div/button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'สร้างรายงานการขาย')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1bf0392a-709f-42a9-80d5-545f99fe1bcd",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.ant-btn-block > span",
+      "targets": [
+        ["css=.ant-btn-block > span", "css:finder"],
+        ["xpath=//div[7]/div/button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'สร้างรายงานการขาย')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a7ea68db-9486-41ab-94f5-24641c302a22",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.ant-btn-block > span",
+      "targets": [
+        ["css=.ant-btn-block > span", "css:finder"],
+        ["xpath=//div[7]/div/button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'สร้างรายงานการขาย')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "27969e62-d87a-4f24-bf62-3736b47988e7",
+      "comment": "",
+      "command": "click",
+      "target": "id=ReportName",
+      "targets": [
+        ["id=ReportName", "id"],
+        ["css=#ReportName", "css:finder"],
+        ["xpath=//input[@id='ReportName']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ede84630-578f-4e11-9eb7-678a89e7f625",
+      "comment": "",
+      "command": "type",
+      "target": "id=ReportName",
+      "targets": [
+        ["id=ReportName", "id"],
+        ["css=#ReportName", "css:finder"],
+        ["xpath=//input[@id='ReportName']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "รายงานเดือนพฤศจิกายน"
+    }, {
+      "id": "2239da01-32da-44cf-be3a-8235b3c89107",
+      "comment": "",
+      "command": "click",
+      "target": "id=Data",
+      "targets": [
+        ["id=Data", "id"],
+        ["css=#Data", "css:finder"],
+        ["xpath=//input[@id='Data']", "xpath:attributes"],
+        ["xpath=//div[2]/div/div[2]/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "245bf958-ee29-4ce8-9115-4ab5d9e1c9ec",
+      "comment": "",
+      "command": "click",
+      "target": "id=year",
+      "targets": [
+        ["id=year", "id"],
+        ["css=#year", "css:finder"],
+        ["xpath=//input[@id='year']", "xpath:attributes"],
+        ["xpath=//span/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9ca2ffc8-6ac9-4a5f-9219-09bc93ef8375",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ant-select-item-option-active > .ant-select-item-option-content",
+      "targets": [
+        ["css=.ant-select-item-option-active > .ant-select-item-option-content", "css:finder"],
+        ["xpath=//div[3]/div/div/div[2]/div/div/div/div[2]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5ad3ce2c-cac6-4e55-9048-3d62b6ed0b8c",
+      "comment": "",
+      "command": "click",
+      "target": "id=month",
+      "targets": [
+        ["id=month", "id"],
+        ["css=#month", "css:finder"],
+        ["xpath=//input[@id='month']", "xpath:attributes"],
+        ["xpath=//div[4]/div/div[2]/div/div/div/div/span/span/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fdd7aa9d-e444-44c9-9b3a-49ef5b56c4aa",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ant-select-item:nth-child(8) > .ant-select-item-option-content",
+      "targets": [
+        ["css=.ant-select-item:nth-child(8) > .ant-select-item-option-content", "css:finder"],
+        ["xpath=//div[8]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4f52bae5-3f0c-41d4-9aab-da24fb970004",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ant-btn-block > span",
+      "targets": [
+        ["css=.ant-btn-block > span", "css:finder"],
+        ["xpath=//div[7]/div/button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'สร้างรายงานการขาย')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "08f1f2ed-7a0d-40f1-a4c2-bd25797e4d8a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.anticon-close > svg",
+      "targets": [
+        ["css=.anticon-close > svg", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "6b4ca24b-8930-4323-a27c-9744b9c79c73",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ant-row:nth-child(3) .ant-pagination-item:nth-child(3) > a:nth-child(1)",
+      "targets": [
+        ["css=.ant-row:nth-child(3) .ant-pagination-item:nth-child(3) > a:nth-child(1)", "css:finder"],
+        ["xpath=(//a[contains(text(),'2')])[2]", "xpath:link"],
+        ["xpath=//div[@id='root']/div/main/div/div/div[2]/div/div/div/div/div[3]/div/div/div/div[2]/div/div/div/ul/li[3]/a", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/div/div[2]/div/div/div/ul/li[3]/a", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "4aa53597-d533-4fac-85eb-755eaa4c0715",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["49e73b54-0174-47ee-8136-5008a23bffd8"]
+  }],
+  "urls": ["http://localhost:5173/"],
+  "plugins": []
+}

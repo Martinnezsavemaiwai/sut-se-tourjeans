@@ -1,0 +1,139 @@
+@import "../../styles/ColorSheet.css";
+
+.manage-booking-page {
+    width: 100vw;
+    height: 100vh;
+    background: white;
+    overflow: scroll;
+    overflow-y: auto;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+    & .manage-booking-container {
+        width: 100%;
+        height: 92%;
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
+
+        & .text-box {
+            padding-left: 20px;
+            padding-top: 20px;
+        }
+
+        & .card-section {
+            width: 100%;
+            display: flex;
+            height: 87%;
+            padding: 15px 45px;
+
+            & .list-booking-card {
+                width: 100%;
+                height: 100%;
+                background-color: var(--lightyellow);
+                border-radius: 30px;
+                box-shadow: inset 0 0 6px rgba(255, 255, 255, 0.3);
+                padding: 28px 40px;
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+
+                & .search-bar {
+                    display: flex;
+                    gap: 12px;
+                    justify-content: space-between;
+
+                    & .search-box {
+                        width: 60%;
+                        display: flex;
+                        gap: 12px;
+
+                        & select {
+                            border-radius: 10px;
+                            padding: 0px 16px;
+                            border: 1px solid black;
+                        }
+                    }
+
+                    & .search-box-container {
+                        height: 100%;
+                        display: flex;
+                        justify-content: end;
+                        gap: 22px;
+
+                        & .sort-box {
+                            height: 100%;
+                            display: flex;
+                            justify-content: end;
+                            align-items: center;
+                            gap: 12px;
+
+                            & select {
+                                height: 100%;
+                                border-radius: 10px;
+                                padding: 0px 16px;
+                                border: 1px solid black;
+                            }
+                        }
+                    }
+                }
+
+                & .form-section {
+                    overflow: scroll;
+
+                    & table {
+                        border-collapse: separate;
+                        border-spacing: 0 14px;
+                        width: 100%;
+                        padding: 10px;
+
+                        & .booking-id {
+                            border-radius: 10px 0px 0px 10px;
+                        }
+
+                        & .booking-detail {
+                            border-radius: 0px 10px 10px 0px;
+
+                        }
+
+                        & thead {
+                            background: black;
+                            color: var(--title-color-4);
+
+                            & th {
+                                height: 60px;
+                            }
+                        }
+
+                        & tbody {
+                            & tr {
+                                background: white;
+                                box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+                                border-radius: 10px;
+
+                                & td {
+                                    height: 50px;
+                                    text-align: center;
+                                }
+
+                                & .status {
+                                    font-weight: 500;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                & .form-section::-webkit-scrollbar {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+& .manage-booking-page::-webkit-scrollbar {
+    display: none;
+}

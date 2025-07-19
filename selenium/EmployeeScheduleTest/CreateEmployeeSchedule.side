@@ -1,0 +1,135 @@
+{
+  "id": "92b3087a-bea9-4c96-8fca-537927ac0af3",
+  "version": "2.0",
+  "name": "CreateEmployeeSchedule",
+  "url": "https://www.tourjeans.site/employeeschedule",
+  "tests": [{
+    "id": "9ee896fa-b1c5-4529-9aa6-c1547c41b6b0",
+    "name": "Untitled",
+    "commands": [{
+      "id": "295402b4-cc64-4008-b9de-7216ab0bea76",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.tourjeans.site/employeeschedule",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "697acdfc-97de-46e0-bcc3-2f65f2854050",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ant-table-cell-row-hover span:nth-child(2)",
+      "targets": [
+        ["css=.ant-table-cell-row-hover span:nth-child(2)", "css:finder"],
+        ["xpath=//div[@id='root']/div/section/div[2]/div[2]/div/div/div/div/div/table/tbody/tr[2]/td[5]/button/span[2]", "xpath:idRelative"],
+        ["xpath=//button/span[2]", "xpath:position"],
+        ["xpath=//span[contains(.,'Manage EmployeeSchedule')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "46fd0d77-48ef-4232-8bf6-41e741b8afcb",
+      "comment": "",
+      "command": "click",
+      "target": "css=div:nth-child(2) > .ant-row > .ant-col:nth-child(1) span",
+      "targets": [
+        ["css=div:nth-child(2) > .ant-row > .ant-col:nth-child(1) span", "css:finder"],
+        ["xpath=//div[@id='root']/div/section/div/div[2]/div/div/div/div/button/span", "xpath:idRelative"],
+        ["xpath=//div/button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Create Schedule')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "47fa6814-46d6-48dd-a045-459029430446",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=div:nth-child(2) > .ant-row > .ant-col:nth-child(1) .ant-btn",
+      "targets": [
+        ["css=div:nth-child(2) > .ant-row > .ant-col:nth-child(1) .ant-btn", "css:finder"],
+        ["xpath=(//button[@type='button'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/section/div/div[2]/div/div/div/div/button", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Create Schedule')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4b1f8d6a-e688-4c05-a961-b07d5b1b13a9",
+      "comment": "",
+      "command": "click",
+      "target": "css=div:nth-child(2) > .ant-row > .ant-col:nth-child(1) span",
+      "targets": [
+        ["css=div:nth-child(2) > .ant-row > .ant-col:nth-child(1) span", "css:finder"],
+        ["xpath=//div[@id='root']/div/section/div/div[2]/div/div/div/div/button/span", "xpath:idRelative"],
+        ["xpath=//div/button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Create Schedule')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "db69e783-456c-4fd5-a136-d1cb8b4f2ec9",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=div:nth-child(2) > .ant-row > .ant-col:nth-child(1) span",
+      "targets": [
+        ["css=div:nth-child(2) > .ant-row > .ant-col:nth-child(1) span", "css:finder"],
+        ["xpath=//div[@id='root']/div/section/div/div[2]/div/div/div/div/button/span", "xpath:idRelative"],
+        ["xpath=//div/button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Create Schedule')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e6fd22bf-ca73-4e43-a10a-502d2bb07812",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.ant-btn > span:nth-child(2)",
+      "targets": [
+        ["css=.ant-btn > span:nth-child(2)", "css:finder"],
+        ["xpath=//div[@id='root']/div/section/div/div[2]/div/div/div/div/button/span", "xpath:idRelative"],
+        ["xpath=//div/button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Create Schedule')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "02773e91-c142-4ef7-a431-15b1f2aa792a",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=div:nth-child(2) > .ant-row > .ant-col:nth-child(1) .ant-btn",
+      "targets": [
+        ["css=div:nth-child(2) > .ant-row > .ant-col:nth-child(1) .ant-btn", "css:finder"],
+        ["xpath=(//button[@type='button'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/section/div/div[2]/div/div/div/div/button", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Create Schedule')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f2c2c105-b7e3-435b-a2b8-78699b715ff7",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ant-message-notice-content",
+      "targets": [
+        ["css=.ant-message-notice-content", "css:finder"],
+        ["xpath=//body/div[3]/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "840172c9-760c-4f4a-a62e-5ac04ff4659f",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.ant-message-custom-content > span:nth-child(2)",
+      "targets": [
+        ["css=.ant-message-custom-content > span:nth-child(2)", "css:finder"],
+        ["xpath=//div/span[2]", "xpath:position"],
+        ["xpath=//span[contains(.,'Schedule created successfully')]", "xpath:innerText"]
+      ],
+      "value": "Schedule created successfully"
+    }]
+  }],
+  "suites": [{
+    "id": "354f988c-8f31-447f-a889-0ae8604f6eb1",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["9ee896fa-b1c5-4529-9aa6-c1547c41b6b0"]
+  }],
+  "urls": ["http://localhost:5173/employeeschedule", "https://www.tourjeans.site/employeeschedule"],
+  "plugins": []
+}

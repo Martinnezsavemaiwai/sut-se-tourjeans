@@ -1,0 +1,79 @@
+.travel-create-page-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+
+  .travel-create-page {
+    .minimal-datetime {
+      appearance: none;
+      width: 100%;
+      padding: 10px;
+      font-size: 16px;
+      color: #444;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      background-color: #f9f9f9;
+      transition: border-color 0.2s;
+    }
+
+    .minimal-datetime:focus {
+      border-color: #007bff;
+      outline: none;
+    }
+
+    .react-select__control {
+      border: 2px solid #FFD700;
+      border-radius: 25px;
+      box-shadow: none;
+    }
+
+    .react-select__control:hover {
+      border-color: #FFC107;
+    }
+
+    .react-select__option {
+      background-color: #FFF;
+      color: #333;
+    }
+
+    .react-select__option--is-focused {
+      background-color: #FFEBCD;
+    }
+
+    .react-select__option--is-selected {
+      background-color: #FFD700;
+      color: #000;
+    }
+
+    .react-select__menu {
+      border-radius: 10px;
+      margin-top: 5px;
+      background-color: #FFF;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .react-select__placeholder {
+      color: #888;
+      font-style: normal;
+    }
+
+    .react-select__single-value {
+      color: #000;
+    }
+
+    .location-input {
+      border: 2px solid #FFD700;
+      box-shadow: none;
+    }
+
+    .location-input:hover {
+      border-color: #FFC107;
+
+    }
+
+  }
+
+
+}

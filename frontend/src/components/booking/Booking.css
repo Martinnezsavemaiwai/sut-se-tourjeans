@@ -1,0 +1,373 @@
+@import "../../styles/ColorSheet.css";
+
+.booking-container {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.700);
+    position: absolute;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    padding: 20px;
+
+    & .card {
+        width: 77%;
+        max-height: 90%;
+        background-color: var(--card-color);
+        border-radius: 10px;
+        box-shadow: 0 0px 5px rgba(0, 0, 0, 0.2);
+        display: flex;
+        flex-direction: column;
+        overflow: scroll;
+        overflow-y: auto;
+        overflow-x: hidden;
+
+        & .header {
+            width: 100%;
+            height: 45px;
+            background: var(--orange-yellow-for-bg);
+            border-radius: 10px 10px 0px 0px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+            font-weight: 700;
+            box-shadow: 0 0px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        & .section-cover {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            padding: 22px 40px;
+            align-items: stretch;
+            font-size: 14px;
+
+            & .sub-card {
+                border-radius: 10px;
+                background-color: var(--white);
+                box-shadow: 0 0px 5px rgba(0, 0, 0, 0.2);
+                padding: 20px 25px;
+                background-color: var(--white);
+
+                & .title {
+                    color: var(--blue);
+                    font-weight: 600;
+                    font-size: 16px;
+                }
+            }
+
+            & .select-persontype-card {
+                width: 40%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+
+                & .top-box {
+                    & .add-quantity-box {
+                        display: flex;
+                        flex-direction: column;
+
+                        & .title-box {
+                            display: flex;
+                            margin: 12px 0px 5px 0px;
+
+                            & span {
+                                font-weight: 600;
+                            }
+
+                            & .span2,
+                            .span3 {
+                                text-align: center;
+                            }
+
+                            & .span1,
+                            .span3 {
+                                width: 35%;
+                            }
+
+                            & .span2 {
+                                width: 30%;
+                            }
+                        }
+
+                        & .infant-title {
+                            font-weight: 600;
+                            margin: 12px 0px 5px 0px;
+                            display: flex;
+                        }
+
+                        & .price-box {
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+                            margin: 4px 30px;
+
+                            & .type-name {
+                                width: 40%;
+                            }
+
+                            & .quantity {
+                                width: 30px;
+                            }
+
+                            & .price {
+                                width: 40%;
+                                text-align: end;
+                            }
+                        }
+                    }
+                }
+
+                & .bottom-box {
+                    & .total-price-box {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        font-weight: 600;
+                        padding: 0px 30px;
+                        margin: 8px 0px;
+
+                        & .title-total-price {
+                            width: 30%;
+                        }
+
+                        & .total-people {
+                            width: 8%;
+                            text-align: center;
+                        }
+
+                        & .total-price {
+                            width: 35%;
+                            text-align: end;
+                            color: var(--orange);
+                            font-weight: 700;
+                        }
+                    }
+
+                    & hr {
+                        border: none;
+                        border-top: 2px solid #000000;
+                        margin: 5px 0px;
+                    }
+                }
+            }
+
+            & .card-box {
+                width: 57.5%;
+                display: flex;
+                flex-direction: column;
+
+                & .booking-data-card {
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+
+                    & .customer-form {
+                        display: flex;
+                        width: 100%;
+                        flex-wrap: wrap;
+                        justify-content: space-between;
+
+                        & .data-box {
+                            width: 48%;
+                            display: flex;
+                            flex-direction: column;
+                            margin-top: 8px;
+                            margin-bottom: 5px;
+
+                            & .title-input {
+                                font-weight: 600;
+                                margin-bottom: 4px;
+                            }
+
+                            & input {
+                                width: 100%;
+                                height: 35px;
+                                border-radius: 5px;
+                                border: 1px solid var(--border-color-1);
+                                font-size: 14px;
+                                color: rgb(94, 94, 94);
+                                padding: 15px;
+                            }
+                        }
+
+                        & .btn-box {
+                            width: 100%;
+                            display: flex;
+                            align-items: center;
+                            margin-top: 12px;
+                            justify-content: flex-end;
+
+                            & .btn {
+                                padding: 3px 8px;
+                                cursor: pointer;
+                                color: var(--btn-color-1);
+                                border-radius: 5px;
+                                transition: all ease 0.3s;
+                                border: 1px solid;
+                            }
+
+                            & .btn:hover {
+                                box-shadow: 0 0px 5px rgba(0, 0, 0, 0.2);
+                            }
+
+                            & .edit-btn {
+                                border: 1px solid var(--btn-color-1);
+                            }
+
+                            & .edit-btn:hover,
+                            .confirm-btn:hover {
+                                background-color: var(--btn-color-1);
+                                color: var(--white);
+                                border-color: var(--btn-color-1);
+                            }
+
+                            & .sub-btn-box {
+                                display: flex;
+                                gap: 10px;
+
+                                & .confirm-btn {
+                                    border: 1px solid var(--btn-color-1);
+                                    background-color: var(--btn-color-1);
+                                    color: var(--white);
+                                }
+
+                                & .cancel-btn {
+                                    border-color: #7e7e7e;
+                                    color: #7e7e7e;
+                                    background-color: var(--white);
+                                }
+                            }
+                        }
+                    }
+                }
+
+                & .confirm-booking-card {
+                    margin-top: 4%;
+                    height: 100%;
+                    display: flex;
+                    position: relative;
+                    padding: 0px;
+
+                    & .detail {
+                        padding: 20px 25px;
+                        width: 75%;
+                        display: flex;
+                        flex-direction: column;
+
+                        & .title {
+                            display: flex;
+                            margin-bottom: 10px;
+                        }
+
+                        & .sub-box {
+                            display: flex;
+                            align-items: center;
+                            margin-bottom: 15px;
+
+                            & .img-box {
+                                width: 25px;
+                                min-width: 25px;
+                                height: 25px;
+                                min-height: 25px;
+                                margin-right: 12px;
+
+                                & img {
+                                    width: 100%;
+                                    height: 100%;
+                                    object-fit: cover;
+                                }
+                            }
+                        }
+
+                        & .btn-box {
+                            margin-top: 15px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: end;
+
+                            & .btn {
+                                margin: 0px 8px;
+                                width: 100px;
+                                height: 34px;
+                                border-radius: 5px;
+                                border: 1px solid;
+                                transition: all ease 0.3s;
+                            }
+
+                            & .btn:hover {
+                                box-shadow: 0 0px 5px rgba(0, 0, 0, 0.2);
+                            }
+
+                            & .cancel-btn {
+                                border-color: #7e7e7e;
+                                color: #7e7e7e;
+                                background-color: var(--white);
+                            }
+
+                            & .confirm-btn {
+                                border-color: var(--green);
+                                background-color: var(--green);
+                                color: var(--white);
+                            }
+                        }
+                    }
+
+                    & .picture-box {
+                        right: 0;
+                        width: 25%;
+                        height: 100%;
+                        border-radius: 0px 10px 10px 0px;
+                        overflow: hidden;
+                        position: absolute;
+
+                        & img {
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    & .card::-webkit-scrollbar {
+        display: none;
+    }
+
+    & .ant-input-number:focus,
+    .ant-input-number-focused {
+        box-shadow: none !important;
+        outline: none !important;
+        border: 1px solid var(--border-color-1);
+    }
+
+    & .ant-input-number:hover {
+        border-color: inherit !important;
+    }
+
+    .ant-input:focus {
+        box-shadow: none !important;
+        outline: none !important;
+        border: 1px solid var(--border-color-1);
+    }
+}
+
+@media only screen and (max-width: 1200px){
+    .booking-container .card .section-cover {
+        flex-direction: column;   
+
+        .select-persontype-card, .card-box{
+            width: 100%;
+        }
+    }
+}
